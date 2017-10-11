@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "sdkVersion": "21.0.0",
+    "orientation": "portrait",
+    "name": "VSLR UI Kit",
+    "icon": "./assets/logo.png"
+  },
+  "loading": {
+    "backgroundColor": "#fff",
+    "hideExponentText": true,
+    "icon": "./assets/loading-logo.png"
+  }
+}

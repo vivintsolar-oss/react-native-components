@@ -1,0 +1,8 @@
+node_modules/
+.expo/
+npm-debug.*
+yarn.lock
+.DS_Store
+*.log
+.lerna_backup
+lerna-debug.log

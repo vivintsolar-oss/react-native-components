@@ -1,0 +1,29 @@
+{
+  "name": "@vivintsolar-oss/form-input",
+  "version": "1.0.0",
+  "description": "Form Input for VSLR UI kit",
+  "private": false,
+  "author": "tcasey",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivintsolar-oss/react-native-components.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "16.0.0-alpha.12",
+    "react-native": "^0.48.4",
+    "react-native-svg": "^6.0.0-rc1"
+  },
+  "bugs": {
+    "url": "https://github.com/vivintsolar-oss/react-native-components/issues"
+  },
+  "homepage": "https://github.com/vivintsolar-oss/react-native-components#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
