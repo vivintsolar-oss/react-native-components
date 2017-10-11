@@ -1,6 +1,6 @@
 {
   "name": "@vivintsolar-oss/submit-button",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Submit Button for  VSLR UI kit",
   "private": false,
   "author": "tcasey",
@@ -11,6 +11,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@vivintsolar-oss/touchable": "1.0.1",
     "prop-types": "^15.6.0",
     "react": "16.0.0-alpha.12",
     "react-native": "^0.48.4",
