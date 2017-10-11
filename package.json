@@ -6,6 +6,7 @@
     "@storybook/addon-actions": "^3.2.12",
     "@storybook/addon-links": "^3.2.12",
     "@storybook/react-native": "^3.2.12",
+    "concurrently": "^3.5.0",
     "jest-expo": "^21.0.2",
     "lerna": "^2.4.0",
     "prop-types": "^15.6.0",
@@ -15,10 +16,10 @@
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "react-native-scripts start",
+    "start": "concurrently --kill-others \"storybook start -p 7007\" \"react-native-scripts start\"",
+    "android": "concurrently --kill-others \"storybook start -p 7007\" \"react-native-scripts android\"",
+    "ios": "concurrently --kill-others \"storybook start -p 7007\" \"react-native-scripts ios\"",
     "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
     "test": "node node_modules/jest/bin/jest.js --watch",
     "storybook": "storybook start -p 7007"
   },
