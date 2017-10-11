@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { StyleSheet, Text, TouchableOpacity } from "react-native";
+import { StyleSheet, Text } from "react-native";
+import Touchable from "@vivintsolar-oss/touchable";
 
 export default class SubmitButton extends Component {
   render() {
@@ -11,11 +12,11 @@ export default class SubmitButton extends Component {
     }
 
     return (
-      <TouchableOpacity style={containerStyles} {...this.props}>
+      <Touchable style={containerStyles} {...this.props}>
         <Text style={styles.buttonText}>
           {this.props.text ? this.props.text : "CLICK ME"}
         </Text>
-      </TouchableOpacity>
+      </Touchable>
     );
   }
 }

@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { StyleSheet, Text, TouchableOpacity } from "react-native";
+import { StyleSheet, Text } from "react-native";
+import Touchable from "@vivintsolar-oss/touchable";
 
 export default function AltButton(props) {
   return (
-    <TouchableOpacity style={styles.button} {...props}>
+    <Touchable style={styles.button} {...props}>
       <Text style={styles.buttonText}>{props.text}</Text>
-    </TouchableOpacity>
+    </Touchable>
   );
 }
 
