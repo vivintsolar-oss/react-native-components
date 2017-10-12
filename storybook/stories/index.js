@@ -5,10 +5,10 @@ import { storiesOf } from "@storybook/react-native";
 import { action } from "@storybook/addon-actions";
 import { linkTo } from "@storybook/addon-links";
 
-import SubmitButton from "@vivintsolar-oss/submit-button";
-import AltButton from "@vivintsolar-oss/alt-button";
-import FormInput from "@vivintsolar-oss/form-input";
-import ModalAlert from "@vivintsolar-oss/modal-alert";
+import SubmitButton from "@vivintsolar-oss/native-submit-button";
+import AltButton from "@vivintsolar-oss/native-alt-button";
+import FormInput from "@vivintsolar-oss/native-form-input";
+import ModalAlert from "@vivintsolar-oss/native-modal-alert";
 import CenterView from "./CenterView";
 
 import Welcome from "./Welcome";

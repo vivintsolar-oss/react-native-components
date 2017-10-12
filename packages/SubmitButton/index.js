@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { StyleSheet, Text } from "react-native";
-import Touchable from "@vivintsolar-oss/touchable";
+import Touchable from "@vivintsolar-oss/native-touchable";
 
 export default class SubmitButton extends Component {
   render() {

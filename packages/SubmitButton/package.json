@@ -11,7 +11,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@vivintsolar-oss/touchable": "1.0.1",
+    "@vivintsolar-oss/native-touchable": "1.0.0",
     "prop-types": "^15.6.0",
     "react": "16.0.0-alpha.12",
     "react-native": "^0.48.4",
@@ -20,7 +20,8 @@
   "bugs": {
     "url": "https://github.com/vivintsolar-oss/react-native-components/issues"
   },
-  "homepage": "https://github.com/vivintsolar-oss/react-native-components#readme",
+  "homepage":
+    "https://github.com/vivintsolar-oss/react-native-components#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
