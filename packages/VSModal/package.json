@@ -1,7 +1,7 @@
 {
-  "name": "@vivintsolar-oss/native-alt-button",
+  "name": "@vivintsolar-oss/native-vs-modal",
   "version": "1.0.0",
-  "description": "Alternate Button for VSLR UI kit",
+  "description": "Modal for  VSLR UI kit",
   "private": false,
   "author": "tcasey",
   "main": "./index.js",
@@ -11,7 +11,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@vivintsolar-oss/touchable": "1.0.1",
+    "@vivintsolar-oss/native-vs-button": "^1.0.0",
     "prop-types": "^15.6.0",
     "react": "16.0.0-alpha.12",
     "react-native": "^0.48.4",

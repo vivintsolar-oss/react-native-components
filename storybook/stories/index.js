@@ -5,25 +5,26 @@ import { storiesOf } from "@storybook/react-native";
 import { action } from "@storybook/addon-actions";
 import { linkTo } from "@storybook/addon-links";
 
-import SubmitButton from "@vivintsolar-oss/native-submit-button";
-import AltButton from "@vivintsolar-oss/native-alt-button";
-import FormInput from "@vivintsolar-oss/native-form-input";
-import ModalAlert from "@vivintsolar-oss/native-modal-alert";
+import VSButton from "@vivintsolar-oss/native-vs-button";
+import VSInput from "@vivintsolar-oss/native-vs-input";
+import VSModal from "@vivintsolar-oss/native-vs-alert";
 import CenterView from "./CenterView";
 
 import Welcome from "./Welcome";
 
 storiesOf("Welcome", module).add("to Storybook", () => (
-  <Welcome showApp={linkTo("SubmitButton")} />
+  <Welcome showApp={linkTo("VSButton")} />
 ));
 
 storiesOf("Buttons", module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add("Submit", () => {
-    return <SubmitButton text="SUBMIT" onPress={action("clicked-submit")} />;
+    return <VSButton text="SUBMIT" onPress={action("clicked-submit")} />;
   })
   .add("Alternate", () => {
-    return <AltButton text="Do Something" onPress={action("clicked-alt")} />;
+    return (
+      <VSButton outline text="Do Something" onPress={action("clicked-alt")} />
+    );
   });
 
 storiesOf("Forms", module)
@@ -31,7 +32,7 @@ storiesOf("Forms", module)
   .add("Input", () => {
     return (
       <View style={{ width: "80%" }}>
-        <FormInput
+        <VSInput
           label="New Input"
           returnKeyType="next"
           autoCapitalize="none"
@@ -44,7 +45,7 @@ storiesOf("Forms", module)
   .add("Input Error", () => {
     return (
       <View style={{ width: "80%" }}>
-        <FormInput
+        <VSInput
           label="New Input"
           returnKeyType="next"
           autoCapitalize="none"
@@ -59,7 +60,7 @@ storiesOf("Modal", module)
   .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
   .add("Alert", () => {
     return (
-      <ModalAlert
+      <VSModal
         type="success"
         text={"Every little thing is gonna be alright."}
         createText="OK"
@@ -68,7 +69,7 @@ storiesOf("Modal", module)
   })
   .add("Create", () => {
     return (
-      <ModalAlert
+      <VSModal
         type="create"
         text={"Way to go, looks like you did something right for a change!"}
         createText="Go Back"

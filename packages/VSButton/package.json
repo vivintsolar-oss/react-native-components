@@ -1,7 +1,7 @@
 {
-  "name": "@vivintsolar-oss/native-submit-button",
+  "name": "@vivintsolar-oss/native-vs-button",
   "version": "1.0.0",
-  "description": "Submit Button for  VSLR UI kit",
+  "description": "Button for  VSLR UI kit",
   "private": false,
   "author": "tcasey",
   "main": "./index.js",
@@ -20,8 +20,7 @@
   "bugs": {
     "url": "https://github.com/vivintsolar-oss/react-native-components/issues"
   },
-  "homepage":
-    "https://github.com/vivintsolar-oss/react-native-components#readme",
+  "homepage": "https://github.com/vivintsolar-oss/react-native-components#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

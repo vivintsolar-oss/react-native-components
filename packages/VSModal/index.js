@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { StyleSheet, View, Text, Image } from "react-native";
 import CheckmarkCircle from "./CheckmarkCircle";
-import AltButton from "../AltButton";
+import VSButton from "@vivintsolar-oss/native-vs-button";
 
 const confirmEmail = require("./confirm-email.png");
 
-class ModalAlert extends Component {
+class VSModal extends Component {
   go(route) {
     // Routes to specific route that was passed in as param
     return route;
@@ -41,7 +41,8 @@ class ModalAlert extends Component {
           )}
         </View>
         {type === "create" ? (
-          <AltButton
+          <VSButton
+            outline
             onPress={() => {
               return this.go(link);
             }}
@@ -53,7 +54,7 @@ class ModalAlert extends Component {
   }
 }
 
-ModalAlert.propTypes = {
+VSModal.propTypes = {
   type: PropTypes.string,
   text: PropTypes.string,
   createText: PropTypes.string,
@@ -61,7 +62,7 @@ ModalAlert.propTypes = {
   history: PropTypes.object
 };
 
-export default ModalAlert;
+export default VSModal;
 
 const styles = StyleSheet.create({
   successContainer: {

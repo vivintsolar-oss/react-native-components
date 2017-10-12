@@ -1,7 +1,7 @@
 {
-  "name": "@vivintsolar-oss/native-form-input",
+  "name": "@vivintsolar-oss/native-vs-input",
   "version": "1.0.0",
-  "description": "Form Input for VSLR UI kit",
+  "description": "Input for VSLR UI kit",
   "private": false,
   "author": "tcasey",
   "main": "./index.js",

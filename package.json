@@ -1,6 +1,6 @@
 {
   "name": "react-native-components",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.12",
@@ -16,9 +16,12 @@
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "concurrently --kill-others \"storybook start -p 7007\" \"react-native-scripts start\"",
-    "android": "concurrently --kill-others \"storybook start -p 7007\" \"react-native-scripts android\"",
-    "ios": "concurrently --kill-others \"storybook start -p 7007\" \"react-native-scripts ios\"",
+    "start":
+      "concurrently --kill-others \"storybook start -p 7007\" \"react-native-scripts start\"",
+    "android":
+      "concurrently --kill-others \"storybook start -p 7007\" \"react-native-scripts android\"",
+    "ios":
+      "concurrently --kill-others \"storybook start -p 7007\" \"react-native-scripts ios\"",
     "eject": "react-native-scripts eject",
     "test": "node node_modules/jest/bin/jest.js --watch",
     "storybook": "storybook start -p 7007"
@@ -27,11 +30,10 @@
     "preset": "jest-expo"
   },
   "dependencies": {
-    "@vivintsolar-oss/native-alt-button": "^1.0.0",
-    "@vivintsolar-oss/native-form-input": "^1.0.0",
-    "@vivintsolar-oss/native-modal-alert": "^1.0.0",
-    "@vivintsolar-oss/native-submit-button": "^1.0.0",
-    "@vivintsolar-oss/native-touchable": "^1.0.0",
+    "@vivintsolar-oss/native-vs-input": "^1.0.0",
+    "@vivintsolar-oss/native-vs-modal": "^1.0.0",
+    "@vivintsolar-oss/native-vs-button": "^1.0.0",
+    "@vivintsolar-oss/native-vs-touchable": "^1.0.0",
     "expo": "^21.0.0",
     "react": "16.0.0-alpha.12",
     "react-native": "^0.48.4",

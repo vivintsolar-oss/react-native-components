@@ -10,7 +10,7 @@ import {
 import AlertFillIcon from "./AlertFillIcon";
 import InfoFillIcon from "./InfoFillIcon";
 
-export default class FormInput extends React.Component {
+export default class VSInput extends React.Component {
   render() {
     const warning = this.props.error;
     const { info } = this.props;
@@ -57,7 +57,7 @@ export default class FormInput extends React.Component {
   }
 }
 
-FormInput.propTypes = {
+VSInput.propTypes = {
   label: PropTypes.string,
   form: PropTypes.array,
   error: PropTypes.string,
@@ -66,7 +66,7 @@ FormInput.propTypes = {
   toggle: PropTypes.func
 };
 
-FormInput.defaultProps = {
+VSInput.defaultProps = {
   form: [],
   index: 0
 };

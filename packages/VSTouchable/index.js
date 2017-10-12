@@ -26,7 +26,7 @@ if (
   TouchableComponent.Ripple = (color, borderless) => ({});
 }
 
-export default class Touchable extends React.Component {
+export default class VSTouchable extends React.Component {
   static SelectableBackground = TouchableComponent.SelectableBackground;
   static SelectableBackgroundBorderless = TouchableComponent.SelectableBackgroundBorderless;
   static Ripple = TouchableComponent.Ripple;
@@ -53,4 +53,4 @@ export default class Touchable extends React.Component {
   }
 }
 
-Touchable.propTypes = {};
+VSTouchable.propTypes = {};

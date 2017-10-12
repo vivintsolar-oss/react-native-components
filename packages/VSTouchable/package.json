@@ -1,5 +1,5 @@
 {
-  "name": "@vivintsolar-oss/native-touchable",
+  "name": "@vivintsolar-oss/native-vs-touchable",
   "version": "1.0.0",
   "description": "Touchable Wrapper for VSLR UI kit",
   "private": false,
