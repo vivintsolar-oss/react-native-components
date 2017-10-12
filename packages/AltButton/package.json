@@ -1,6 +1,6 @@
 {
-  "name": "@vivintsolar-oss/alt-button",
-  "version": "1.0.2",
+  "name": "@vivintsolar-oss/native-alt-button",
+  "version": "1.0.0",
   "description": "Alternate Button for VSLR UI kit",
   "private": false,
   "author": "tcasey",

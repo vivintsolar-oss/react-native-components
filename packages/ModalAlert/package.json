@@ -1,6 +1,6 @@
 {
-  "name": "@vivintsolar-oss/modal-alert",
-  "version": "1.0.1",
+  "name": "@vivintsolar-oss/native-modal-alert",
+  "version": "1.0.0",
   "description": "Modal Alert for  VSLR UI kit",
   "private": false,
   "author": "tcasey",

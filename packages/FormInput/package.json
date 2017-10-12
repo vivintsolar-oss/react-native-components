@@ -1,6 +1,6 @@
 {
-  "name": "@vivintsolar-oss/form-input",
-  "version": "1.0.1",
+  "name": "@vivintsolar-oss/native-form-input",
+  "version": "1.0.0",
   "description": "Form Input for VSLR UI kit",
   "private": false,
   "author": "tcasey",

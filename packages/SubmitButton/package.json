@@ -1,6 +1,6 @@
 {
-  "name": "@vivintsolar-oss/submit-button",
-  "version": "1.0.2",
+  "name": "@vivintsolar-oss/native-submit-button",
+  "version": "1.0.0",
   "description": "Submit Button for  VSLR UI kit",
   "private": false,
   "author": "tcasey",
