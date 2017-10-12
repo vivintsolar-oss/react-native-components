@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { StyleSheet, Text } from "react-native";
-import Touchable from "@vivintsolar-oss/vs-native-touchable";
+import VSTouchable from "@vivintsolar-oss/native-vs-touchable";
 
 export default class VSButton extends Component {
   render() {
@@ -13,20 +13,20 @@ export default class VSButton extends Component {
 
     if (this.props.outline) {
       return (
-        <Touchable style={styles.outlineButton} {...this.props}>
+        <VSTouchable style={styles.outlineButton} {...this.props}>
           <Text style={styles.outlineButtonText}>
             {this.props.text ? this.props.text : "CLICK ME"}
           </Text>
-        </Touchable>
+        </VSTouchable>
       );
     }
 
     return (
-      <Touchable style={containerStyles} {...this.props}>
+      <VSTouchable style={containerStyles} {...this.props}>
         <Text style={styles.buttonText}>
           {this.props.text ? this.props.text : "CLICK ME"}
         </Text>
-      </Touchable>
+      </VSTouchable>
     );
   }
 }

@@ -7,7 +7,7 @@ import { linkTo } from "@storybook/addon-links";
 
 import VSButton from "@vivintsolar-oss/native-vs-button";
 import VSInput from "@vivintsolar-oss/native-vs-input";
-import VSModal from "@vivintsolar-oss/native-vs-alert";
+import VSModal from "@vivintsolar-oss/native-vs-modal";
 import CenterView from "./CenterView";
 
 import Welcome from "./Welcome";
