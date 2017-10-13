@@ -4,8 +4,15 @@
   "private": true,
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.12",
+    "@storybook/addon-info": "^3.2.12",
+    "@storybook/addon-knobs": "^3.2.12",
     "@storybook/addon-links": "^3.2.12",
+    "@storybook/addon-notes": "^3.2.12",
+    "@storybook/addon-options": "^3.2.12",
     "@storybook/react-native": "^3.2.12",
+    "eslint": "^3.19.0",
+    "eslint-config-vstg": "^2.1.0",
+    "eslint-plugin-promise": "^3.5.0",
     "concurrently": "^3.5.0",
     "jest-expo": "^21.0.2",
     "lerna": "^2.4.0",
@@ -30,9 +37,9 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@vivintsolar-oss/native-vs-button": "^1.0.0",
     "@vivintsolar-oss/native-vs-input": "^1.0.0",
     "@vivintsolar-oss/native-vs-modal": "^1.0.0",
-    "@vivintsolar-oss/native-vs-button": "^1.0.0",
     "@vivintsolar-oss/native-vs-touchable": "^1.0.0",
     "expo": "^21.0.0",
     "react": "16.0.0-alpha.12",

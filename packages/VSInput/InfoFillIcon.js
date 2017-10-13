@@ -1,19 +1,19 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import Svg, { G, Path } from "react-native-svg";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import Svg, { G, Path } from 'react-native-svg';
 
 class InfoFillIcon extends Component {
   render() {
     return (
       <Svg
-        width={this.props.width}
-        height={this.props.height}
+        width={ this.props.width }
+        height={ this.props.height }
         viewBox="0 0 16 16"
       >
         <G
           id="Info"
-          transform={{ translate: "(-1606 -163)" }}
-          fill={this.props.color}
+          transform={ { translate: '(-1606 -163)' } }
+          fill={ this.props.color }
         >
           <Path
             fillRule="evenodd"
@@ -28,13 +28,13 @@ class InfoFillIcon extends Component {
 InfoFillIcon.propTypes = {
   width: PropTypes.number,
   height: PropTypes.number,
-  color: PropTypes.string
+  color: PropTypes.string,
 };
 
 InfoFillIcon.defaultProps = {
   width: 16,
   height: 16,
-  color: "black"
+  color: 'black',
 };
 
 export default InfoFillIcon;

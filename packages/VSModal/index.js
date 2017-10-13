@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { StyleSheet, View, Text, Image } from "react-native";
-import CheckmarkCircle from "./CheckmarkCircle";
-import VSButton from "@vivintsolar-oss/native-vs-button";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { StyleSheet, View, Text, Image } from 'react-native';
+import CheckmarkCircle from './CheckmarkCircle';
+import VSButton from '@vivintsolar-oss/native-vs-button';
 
-const confirmEmail = require("./confirm-email.png");
+const confirmEmail = require('./confirm-email.png');
 
 class VSModal extends Component {
   go(route) {
@@ -17,38 +17,38 @@ class VSModal extends Component {
     return (
       <View
         style={
-          type === "success" ? styles.successContainer : styles.createContainer
+          type === 'success' ? styles.successContainer : styles.createContainer
         }
       >
         <View />
-        <View style={styles.subContainer}>
-          {type === "create" ? (
-            <View style={styles.group}>
-              <Image source={confirmEmail} />
-              <Text style={[styles.createText, styles.text]}>{text}</Text>
+        <View style={ styles.subContainer }>
+          {type === 'create' ?
+            <View style={ styles.group }>
+              <Image source={ confirmEmail } />
+              <Text style={ [ styles.createText, styles.text ] }>{text}</Text>
             </View>
-          ) : (
-            <View style={styles.group}>
+           :
+            <View style={ styles.group }>
               <CheckmarkCircle
-                style={styles.icon}
+                style={ styles.icon }
                 color="#3FBFAD"
-                width={40}
-                height={40}
+                width={ 40 }
+                height={ 40 }
               />
-              <Text style={[styles.successText, styles.text]}>{text}</Text>
-              <Text style={styles.ok}>OK</Text>
+              <Text style={ [ styles.successText, styles.text ] }>{text}</Text>
+              <Text style={ styles.ok }>OK</Text>
             </View>
-          )}
+          }
         </View>
-        {type === "create" ? (
+        {type === 'create' ?
           <VSButton
             outline
-            onPress={() => {
+            onPress={ () => {
               return this.go(link);
-            }}
-            text={createText}
+            } }
+            text={ createText }
           />
-        ) : null}
+         : null}
       </View>
     );
   }
@@ -59,63 +59,63 @@ VSModal.propTypes = {
   text: PropTypes.string,
   createText: PropTypes.string,
   link: PropTypes.string,
-  history: PropTypes.object
+  history: PropTypes.object,
 };
 
 export default VSModal;
 
 const styles = StyleSheet.create({
   successContainer: {
-    width: "100%",
-    height: "100%",
+    width: '100%',
+    height: '100%',
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
     padding: 60,
-    backgroundColor: "#e7e7e7"
+    backgroundColor: '#e7e7e7',
   },
   createContainer: {
-    width: "100%",
-    height: "100%",
+    width: '100%',
+    height: '100%',
     flex: 1,
-    alignItems: "center",
-    justifyContent: "space-between",
+    alignItems: 'center',
+    justifyContent: 'space-between',
     paddingLeft: 60,
     paddingRight: 60,
     paddingBottom: 20,
-    backgroundColor: "#ffffff"
+    backgroundColor: '#ffffff',
   },
   subContainer: {
     height: 230,
     width: 270,
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "#ffffff",
-    borderRadius: 4
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#ffffff',
+    borderRadius: 4,
   },
   group: {
-    alignItems: "center",
-    justifyContent: "center"
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   icon: {
-    padding: 20
+    padding: 20,
   },
   text: {
     paddingTop: 20,
     paddingLeft: 40,
     paddingRight: 40,
-    backgroundColor: "transparent",
-    textAlign: "center"
+    backgroundColor: 'transparent',
+    textAlign: 'center',
   },
   successText: {
-    fontSize: 16
+    fontSize: 16,
   },
   createText: {
-    fontSize: 16
+    fontSize: 16,
   },
   ok: {
     paddingTop: 40,
     fontSize: 16,
-    color: "#e7e7e7"
-  }
+    color: '#e7e7e7',
+  },
 });

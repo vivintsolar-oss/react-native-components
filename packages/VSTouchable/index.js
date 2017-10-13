@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react';
 import {
   Platform,
   TouchableNativeFeedback,
   TouchableOpacity,
   TouchableWithoutFeedback,
   View
-} from "react-native";
-import PropTypes from "prop-types";
+} from 'react-native';
+import PropTypes from 'prop-types';
 
 let TouchableComponent;
 
-if (Platform.OS === "android") {
+if (Platform.OS === 'android') {
   TouchableComponent =
     Platform.Version <= 20 ? TouchableOpacity : TouchableNativeFeedback;
 } else {
@@ -18,7 +18,7 @@ if (Platform.OS === "android") {
 }
 
 if (
-  Platform.OS === "android" &&
+  Platform.OS === 'android' &&
   TouchableComponent !== TouchableNativeFeedback
 ) {
   TouchableComponent.SelectableBackground = () => ({});

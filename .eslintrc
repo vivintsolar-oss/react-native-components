@@ -1,0 +1,9 @@
+{
+  "extends": ["vstg", "vstg/react"],
+  "rules": {
+    "no-magic-numbers": ["error", { "ignore": [-1, 0, 1, 2] }],
+    "react/jsx-filename-extension": "off",
+    "react/jsx-no-bind": "off",
+    "react/no-string-refs": "off"
+  }
+}

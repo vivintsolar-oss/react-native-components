@@ -1,13 +1,14 @@
-import React from "react";
-import { View, Text } from "react-native";
-import PropTypes from "prop-types";
+import React from 'react';
+import { View, Text } from 'react-native';
+import PropTypes from 'prop-types';
 
 export default class Welcome extends React.Component {
   styles = {
     wrapper: {
       flex: 1,
       padding: 24,
-      justifyContent: "center"
+      alignItems: 'center',
+      justifyContent: 'center'
     },
     header: {
       fontSize: 18,
@@ -29,7 +30,9 @@ export default class Welcome extends React.Component {
     return (
       <View style={this.styles.wrapper}>
         <Text style={this.styles.header}>VSLR UI Kit</Text>
-        <Text style={this.styles.content} />
+        <Text style={this.styles.content}>
+          Now go crazy and check out all the components!
+        </Text>
       </View>
     );
   }
