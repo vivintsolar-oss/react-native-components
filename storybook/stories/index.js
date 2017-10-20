@@ -5,11 +5,10 @@ import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import VSButton from '@vivintsolar-oss/native-vs-button';
-import VSInput from '@vivintsolar-oss/native-vs-input';
-import VSModal from '@vivintsolar-oss/native-vs-modal';
+import VSButton from '../../packages/VSButton';
+import VSInput from '../../packages/VSInput';
+import VSModal from '../../packages/VSModal';
 import CenterView from './CenterView';
-
 import Welcome from './Welcome';
 
 storiesOf('Welcome', module).add('to Storybook', () => {
