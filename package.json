@@ -14,7 +14,6 @@
     "eslint-config-vstg": "^2.1.0",
     "eslint-plugin-promise": "^3.5.0",
     "concurrently": "^3.5.0",
-    "jest-expo": "^21.0.2",
     "lerna": "^2.4.0",
     "prop-types": "^15.6.0",
     "react-dom": "16.0.0-alpha.12",
@@ -30,17 +29,9 @@
     "ios":
       "concurrently --kill-others \"storybook start -p 7007\" \"react-native-scripts ios\"",
     "eject": "react-native-scripts eject",
-    "test": "node node_modules/jest/bin/jest.js --watch",
     "storybook": "storybook start -p 7007"
   },
-  "jest": {
-    "preset": "jest-expo"
-  },
   "dependencies": {
-    "@vivintsolar-oss/native-vs-button": "^1.0.0",
-    "@vivintsolar-oss/native-vs-input": "^1.0.0",
-    "@vivintsolar-oss/native-vs-modal": "^1.0.0",
-    "@vivintsolar-oss/native-vs-touchable": "^1.0.0",
     "expo": "^21.0.0",
     "react": "16.0.0-alpha.12",
     "react-native":
