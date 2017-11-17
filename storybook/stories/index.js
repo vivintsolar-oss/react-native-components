@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image, Dimensions } from 'react-native';
 
 import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
@@ -8,8 +8,11 @@ import { linkTo } from '@storybook/addon-links';
 import VSButton from '../../packages/VSButton';
 import VSInput from '../../packages/VSInput';
 import VSModal from '../../packages/VSModal';
+import VSSwipe from '../../packages/VSSwipe';
+import VSSvg from '../../packages/VSSvg';
 import CenterView from './CenterView';
 import Welcome from './Welcome';
+
 
 storiesOf('Welcome', module).add('to Storybook', () => {
   return <Welcome showApp={ linkTo('VSButton') } />;
@@ -108,6 +111,66 @@ storiesOf('Modal', module)
       </View>
     );
   });
+storiesOf('Swipeable', module)
+  .addDecorator((getStory) => {
+    return <CenterView>{ getStory() }</CenterView>;
+  })
+  .add('Images', () => {
+    return (
+      <View style={ styles.swipeWrapper }>
+        <VSSwipe>
+          <Image
+            source={ { uri: 'https://s-media-cache-ak0.pinimg.com/originals/ee/51/39/ee5139157407967591081ee04723259a.png' } }
+            style={ { width: Dimensions.get('window').width } }
+          />
+          <Image
+            source={ { uri: 'https://s-media-cache-ak0.pinimg.com/originals/40/4f/83/404f83e93175630e77bc29b3fe727cbe.jpg' } }
+            style={ { width: Dimensions.get('window').width } }
+          />
+        </VSSwipe>
+      </View>
+    );
+  })
+  .add('Generic Views', () => {
+    return (
+      <View style={ styles.swipeWrapper }>
+        <VSSwipe>
+          <View
+            style={ { backgroundColor: 'crimson', width: Dimensions.get('window').width } }
+          />
+          <View
+            style={ { backgroundColor: 'aliceblue', width: Dimensions.get('window').width } }
+          />
+          <View
+            style={ { backgroundColor: 'papayawhip', width: Dimensions.get('window').width } }
+          />
+          <View
+            style={ { backgroundColor: 'rebeccapurple', width: Dimensions.get('window').width } }
+          />
+          <View
+            style={ { backgroundColor: 'darkseagreen', width: Dimensions.get('window').width } }
+          />
+          <View
+            style={ { backgroundColor: 'darkorange', width: Dimensions.get('window').width } }
+          />
+          <View
+            style={ { backgroundColor: 'oldlace', width: Dimensions.get('window').width } }
+          />
+        </VSSwipe>
+      </View>
+    );
+  });
+storiesOf('SVG', module)
+  .addDecorator((getStory) => {
+    return <CenterView>{ getStory() }</CenterView>;
+  })
+  .add('Circle', () => {
+    return (
+      <View>
+        <VSSvg.CircleFillIcon />
+      </View>
+    );
+  });
 
 const styles = StyleSheet.create({
   wrapper: {
@@ -133,5 +196,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'space-around',
     alignItems: 'center',
+  },
+  swipeWrapper: {
+    width: Dimensions.get('window').width,
+    height: '100%', // You can set any height here and the component should react
   },
 });
