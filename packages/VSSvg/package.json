@@ -10,13 +10,11 @@
     "url": "git+https://github.com/vivintsolar-oss/react-native-components.git"
   },
   "license": "MIT",
-  "dependencies": {
-    "react-native-svg": "^6.0.0-rc1"
-  },
   "peerDependencies": {
     "prop-types": "^15.6.0",
     "react": "16.0.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-22.0.1.tar.gz"
+    "react-native": "https://github.com/expo/react-native/archive/sdk-22.0.1.tar.gz",
+    "react-native-svg": "^5.0.0"
   },
   "bugs": {
     "url": "https://github.com/vivintsolar-oss/react-native-components/issues"

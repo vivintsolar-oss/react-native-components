@@ -164,13 +164,131 @@ storiesOf('SVG', module)
   .addDecorator((getStory) => {
     return <CenterView>{ getStory() }</CenterView>;
   })
-  .add('Circle', () => {
+  .add('Add', () => {
+    return (
+      <VSSvg.AddIcon />
+    );
+  })
+  .add('Alert Fill', () => {
+    return (
+      <VSSvg.AlertFillIcon />
+    );
+  })
+  .add('Call Fill', () => {
+    return (
+      <VSSvg.CallFillIcon />
+    );
+  })
+  .add('Call', () => {
+    return (
+      <VSSvg.CallIcon />
+    );
+  })
+  .add('Chart Fill', () => {
+    return (
+      <VSSvg.ChartFillIcon />
+    );
+  })
+  .add('Chart', () => {
+    return (
+      <VSSvg.ChartIcon />
+    );
+  })
+  .add('Checkmark Circle', () => {
+    return (
+      <VSSvg.CheckmarkCircleIcon />
+    );
+  })
+  .add('Checkmark Circle Fill', () => {
+    return (
+      <VSSvg.CheckmarkCircleFillIcon />
+    );
+  })
+  .add('Circle Fill', () => {
     return (
       <View>
         <VSSvg.CircleFillIcon />
       </View>
     );
-  });
+  })
+  .add('Close', () => {
+    return (
+      <View>
+        <VSSvg.CloseIcon />
+      </View>
+    );
+  })
+  .add('Coal Fill', () => {
+    return (
+      <View>
+        <VSSvg.CoalFillIcon />
+      </View>
+    );
+  })
+  .add('Fuel Tank', () => {
+    return (
+      <View>
+        <VSSvg.FuelTankFillIcon />
+      </View>
+    );
+  })
+  .add('Gas Fill', () => {
+    return (
+      <View>
+        <VSSvg.GasFillIcon />
+      </View>
+    );
+  })
+  .add('Home Fill', () => {
+    return (
+      <View>
+        <VSSvg.HomeFillIcon />
+      </View>
+    );
+  })
+  .add('Home', () => {
+    return (
+      <View>
+        <VSSvg.HomeIcon />
+      </View>
+    );
+  })
+  .add('Info Fill', () => {
+    return (
+      <View>
+        <VSSvg.InfoFillIcon />
+      </View>
+    );
+  })
+  .add('Left Chevron', () => {
+    return (
+      <View>
+        <VSSvg.LeftChevron />
+      </View>
+    );
+  })
+  .add('Pencil Fill', () => {
+    return (
+      <View>
+        <VSSvg.PencilFillIcon />
+      </View>
+    );
+  })
+  .add('Pine Tree', () => {
+    return (
+      <View>
+        <VSSvg.PineTreeFillIcon />
+      </View>
+    );
+  })
+  .add('Propane Fill', () => {
+    return (
+      <View>
+        <VSSvg.PropaneFillIcon />
+      </View>
+    );
+  })
+  ;
 
 const styles = StyleSheet.create({
   wrapper: {
