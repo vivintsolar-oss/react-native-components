@@ -22,11 +22,12 @@
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "concurrently --kill-others \"storybook start -p 7007\" \"react-native-scripts start\"",
-    "android": "concurrently --kill-others \"storybook start -p 7007\" \"react-native-scripts android\"",
-    "ios": "concurrently --kill-others \"storybook start -p 7007\" \"react-native-scripts ios\"",
+    "start": "concurrently --kill-others \"npm run storybook\" \"react-native-scripts start\"",
+    "android": "concurrently --kill-others \"npm run storybook\" \"react-native-scripts android\"",
+    "ios": "concurrently --kill-others \"npm run storybook\" \"react-native-scripts ios\"",
     "eject": "react-native-scripts eject",
-    "storybook": "storybook start -p 7007"
+    "storybook": "storybook start -p 7007",
+    "publish": "lerna publish"
   },
   "dependencies": {
     "expo": "^21.0.0",

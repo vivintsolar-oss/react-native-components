@@ -1,0 +1,23 @@
+{
+  "name": "@vivintsolar-oss/native-vs-aggregate-pie",
+  "version": "1.0.0",
+  "description": "Native Aggregate Pie chart component",
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/VivintSolar-OSS/react-native-components.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VivintSolar-OSS/react-native-components/issues"
+  },
+  "homepage": "https://github.com/VivintSolar-OSS/react-native-components#readme",
+  "dependencies": {
+    "victory": "^0.24.2",
+    "victory-native": "^0.16.1"
+  }
+}
