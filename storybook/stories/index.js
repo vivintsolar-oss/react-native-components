@@ -5,6 +5,7 @@ import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
+import VSAggregateCircle from '../../packages/VSAggregateCircle';
 import VSButton from '../../packages/VSButton';
 import VSInput from '../../packages/VSInput';
 import VSModal from '../../packages/VSModal';
@@ -12,7 +13,6 @@ import VSSwipe from '../../packages/VSSwipe';
 import VSSvg from '../../packages/VSSvg';
 import CenterView from './CenterView';
 import Welcome from './Welcome';
-
 
 storiesOf('Welcome', module).add('to Storybook', () => {
   return <Welcome showApp={ linkTo('VSButton') } />;
@@ -40,6 +40,22 @@ storiesOf('Buttons', module)
           text="Do Something"
           onPress={ action('clicked-outline-button') }
         />
+        <Text />
+      </View>
+    );
+  });
+
+storiesOf('Charts', module)
+  .addDecorator((getStory) => {
+    return <CenterView>{getStory()}</CenterView>;
+  })
+  .add('Aggregate Pie', () => {
+    const data = { loan: 5, ppa: 4, lease: 3, cash: 1 };
+
+    return (
+      <View style={ styles.wrapper }>
+        <Text style={ styles.header }>VSAggregatePie</Text>
+        <VSAggregateCircle diameter={ 400 } data={ data } label="WC" />
         <Text />
       </View>
     );
