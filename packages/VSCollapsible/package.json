@@ -1,0 +1,27 @@
+{
+  "name": "@vivintsolar-oss/native-vs-collapsible",
+  "version": "1.0.0",
+  "description": "Native collapsible component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/VivintSolar/react-native-components.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VivintSolar/react-native-components/issues"
+  },
+  "homepage": "https://github.com/VivintSolar/react-native-components#readme",
+  "dependencies": {
+    "react-native-collapsible": "^0.10.0"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-23.0.0.tar.gz"
+  }
+}
