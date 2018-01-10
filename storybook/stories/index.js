@@ -7,6 +7,7 @@ import { linkTo } from '@storybook/addon-links';
 
 import VSAggregateCircle from '../../packages/VSAggregateCircle';
 import VSButton from '../../packages/VSButton';
+import VSCollapsible from '../../packages/VSCollapsible';
 import VSInput from '../../packages/VSInput';
 import VSModal from '../../packages/VSModal';
 import VSSwipe from '../../packages/VSSwipe';
@@ -57,6 +58,35 @@ storiesOf('Charts', module)
         <Text style={ styles.header }>VSAggregatePie</Text>
         <VSAggregateCircle diameter={ 400 } data={ data } label="WC" />
         <Text />
+      </View>
+    );
+  });
+
+storiesOf('Collapsible', module)
+  .addDecorator((getStory) => {
+    return <CenterView>{getStory()}</CenterView>;
+  })
+  .add('Default', () => {
+    return (
+      <View style={ styles.wrapper }>
+        <VSCollapsible>
+          <View>
+            <Text>Just some sample text</Text>
+          </View>
+        </VSCollapsible>
+      </View>
+    );
+  })
+  .add('With always visible content', () => {
+    const alwaysVisible = <Text>I'll always be here</Text>;
+
+    return (
+      <View style={ styles.wrapper }>
+        <VSCollapsible alwaysVisible={ alwaysVisible }>
+          <View>
+            <Text>Just some sample text</Text>
+          </View>
+        </VSCollapsible>
       </View>
     );
   });
