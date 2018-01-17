@@ -1,7 +1,8 @@
 {
   "name": "@vivintsolar-oss/native-vs-collapsible",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Native collapsible component",
+  "private": false,
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,5 +24,8 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-23.0.0.tar.gz"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

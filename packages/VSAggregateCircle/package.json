@@ -1,7 +1,8 @@
 {
   "name": "@vivintsolar-oss/native-vs-aggregate-pie",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Native Aggregate Pie chart component",
+  "private": false,
   "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +20,8 @@
   "dependencies": {
     "victory": "^0.24.2",
     "victory-native": "^0.16.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
