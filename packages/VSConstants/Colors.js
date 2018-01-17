@@ -1,0 +1,43 @@
+const ORANGE = '#FF8200';
+const BLACK = '#1F2123';
+const DARK_GRAY = '#4a4a4a';
+const MEDIUM_GRAY = '#656769';
+const LIGHT_GRAY = '#979797';
+const BORDER_GRAY = '#D9DADB';
+const LIGHTER_GRAY = '#e7e7e7';
+const BACKGROUND_GRAY = '#EDEEEF';
+const OFF_WHITE = '#f7f8f8';
+const WHITE = '#ffffff';
+const BLUE = '#3FBFAD';
+const LOGO_ORANGE = '#FF4E00';
+const PRIMARY = BLUE;
+const PRODUCTION = BLUE;
+const CONSUMPTION = '#979797';
+const BATTERY_USE = '#57c1e8';
+const BATTERY_CHARGE = '#3ba126';
+const BATTERY_EXPORT = '#97d7ce';
+const GRID_USE = '#e96565';
+const ERROR = '#E74C3C';
+
+export default {
+  ORANGE,
+  BLACK,
+  DARK_GRAY,
+  MEDIUM_GRAY,
+  BORDER_GRAY,
+  LIGHT_GRAY,
+  LIGHTER_GRAY,
+  BACKGROUND_GRAY,
+  OFF_WHITE,
+  WHITE,
+  BLUE,
+  PRIMARY,
+  LOGO_ORANGE,
+  PRODUCTION,
+  CONSUMPTION,
+  BATTERY_USE,
+  BATTERY_CHARGE,
+  BATTERY_EXPORT,
+  GRID_USE,
+  ERROR,
+};
