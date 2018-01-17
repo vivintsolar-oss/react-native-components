@@ -271,6 +271,20 @@ storiesOf('SVG', module)
       </View>
     );
   })
+  .add('Eye Fill', () => {
+    return (
+      <View>
+        <VSSvg.EyeFillIcon />
+      </View>
+    );
+  })
+  .add('Eye', () => {
+    return (
+      <View>
+        <VSSvg.EyeIcon />
+      </View>
+    );
+  })
   .add('Fuel Tank', () => {
     return (
       <View>
@@ -282,6 +296,13 @@ storiesOf('SVG', module)
     return (
       <View>
         <VSSvg.GasFillIcon />
+      </View>
+    );
+  })
+  .add('Group Fill', () => {
+    return (
+      <View>
+        <VSSvg.GroupFillIcon />
       </View>
     );
   })
@@ -313,6 +334,20 @@ storiesOf('SVG', module)
       </View>
     );
   })
+  .add('No View Fill', () => {
+    return (
+      <View>
+        <VSSvg.NoViewFillIcon />
+      </View>
+    );
+  })
+  .add('No View', () => {
+    return (
+      <View>
+        <VSSvg.NoViewIcon />
+      </View>
+    );
+  })
   .add('Pencil Fill', () => {
     return (
       <View>
@@ -331,6 +366,69 @@ storiesOf('SVG', module)
     return (
       <View>
         <VSSvg.PropaneFillIcon />
+      </View>
+    );
+  })
+  .add('Recycle Fill', () => {
+    return (
+      <View>
+        <VSSvg.RecycleFillIcon />
+      </View>
+    );
+  })
+  .add('Right Chevron', () => {
+    return (
+      <View>
+        <VSSvg.RightChevron />
+      </View>
+    );
+  })
+  .add('Send', () => {
+    return (
+      <View>
+        <VSSvg.SendIcon />
+      </View>
+    );
+  })
+  .add('Settings Fill', () => {
+    return (
+      <View>
+        <VSSvg.SettingsFillIcon />
+      </View>
+    );
+  })
+  .add('Sign Out', () => {
+    return (
+      <View>
+        <VSSvg.SignOutIcon />
+      </View>
+    );
+  })
+  .add('Thumbprint', () => {
+    return (
+      <View>
+        <VSSvg.ThumbprintIcon />
+      </View>
+    );
+  })
+  .add('Trash Fill', () => {
+    return (
+      <View>
+        <VSSvg.TrashFillIcon />
+      </View>
+    );
+  })
+  .add('Warning Fill', () => {
+    return (
+      <View>
+        <VSSvg.WarningFillIcon />
+      </View>
+    );
+  })
+  .add('Warning', () => {
+    return (
+      <View>
+        <VSSvg.WarningIcon />
       </View>
     );
   })
