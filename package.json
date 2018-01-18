@@ -22,6 +22,7 @@
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
+    "prestart": "lerna bootstrap",
     "start": "concurrently --kill-others \"npm run storybook\" \"react-native-scripts start\"",
     "android": "concurrently --kill-others \"npm run storybook\" \"react-native-scripts android\"",
     "ios": "concurrently --kill-others \"npm run storybook\" \"react-native-scripts ios\"",
