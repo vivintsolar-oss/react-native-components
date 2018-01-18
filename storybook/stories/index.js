@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image, Dimensions } from 'react-native';
+import { View, Text, StyleSheet, Image, Dimensions, Alert } from 'react-native';
 
 import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
@@ -112,13 +112,52 @@ storiesOf('Input', module)
       </View>
     );
   })
+  .add('Info', () => {
+    return (
+      <View style={ [ styles.formWrapper ] }>
+        <Text style={ styles.header }>VSInput</Text>
+        <View style={ { width: '100%' } }>
+          <VSInput
+            info
+            toggle={ () => {
+              return Alert.alert('Some explination that will make provide more information');
+            } }
+            label="Something Potentially Confusing"
+            returnKeyType="next"
+            autoCapitalize="none"
+            autoCorrect={ false }
+            onChange={ action('keypressed') }
+          />
+        </View>
+        <Text />
+      </View>
+    );
+  })
+  .add('Password', () => {
+    return (
+      <View style={ [ styles.formWrapper ] }>
+        <Text style={ styles.header }>VSInput</Text>
+        <View style={ { width: '100%' } }>
+          <VSInput
+            password
+            label="Sensitive Data"
+            returnKeyType="next"
+            autoCapitalize="none"
+            autoCorrect={ false }
+            onChange={ action('keypressed') }
+          />
+        </View>
+        <Text />
+      </View>
+    );
+  })
   .add('Error', () => {
     return (
       <View style={ [ styles.formWrapper ] }>
         <Text style={ styles.header }>VSInput Error</Text>
         <View style={ { width: '100%' } }>
           <VSInput
-            label="New Input"
+            label="Error Input"
             returnKeyType="next"
             autoCapitalize="none"
             autoCorrect={ false }
