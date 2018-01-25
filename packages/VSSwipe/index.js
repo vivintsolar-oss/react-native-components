@@ -7,7 +7,7 @@ import {
   ScrollView,
 } from 'react-native';
 
-import { CircleFillIcon } from '../VSSvg/index';
+import { CircleFillIcon } from '@vivintsolar-oss/native-vs-icons';
 import Indicator from './Indicator';
 
 export default class VSSwipe extends Component {
