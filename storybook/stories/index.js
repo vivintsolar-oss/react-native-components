@@ -5,6 +5,7 @@ import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
+import VSNumberCompare from '../../packages/VSNumberCompare';
 import VSAggregateCircle from '../../packages/VSAggregateCircle';
 import VSButton from '../../packages/VSButton';
 import VSCollapsible from '../../packages/VSCollapsible';
@@ -18,6 +19,18 @@ import Welcome from './Welcome';
 storiesOf('Welcome', module).add('to Storybook', () => {
   return <Welcome showApp={ linkTo('VSButton') } />;
 });
+
+storiesOf('Dashboards', module)
+.addDecorator(getStory => {
+  return <CenterView>{ getStory() }</CenterView>;
+})
+.add('Default', () => {
+  return (
+    <View style={ styles.wrapper }>
+      <VSNumberCompare />
+    </View>
+  )
+})
 
 storiesOf('Buttons', module)
   .addDecorator((getStory) => {

@@ -1,0 +1,28 @@
+{
+  "name": "@vivintsolar-oss/native-vs-number-compare",
+  "version": "1.2.1",
+  "description": "Number comparison component",
+  "private": false,
+  "author": "devtanc",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivintsolar-oss/react-native-components.git"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "16.0.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-22.0.1.tar.gz"
+  },
+  "bugs": {
+    "url": "https://github.com/vivintsolar-oss/react-native-components/issues"
+  },
+  "homepage": "https://github.com/vivintsolar-oss/react-native-components#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
