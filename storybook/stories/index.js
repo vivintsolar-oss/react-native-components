@@ -471,6 +471,13 @@ storiesOf('SVG', module)
       </View>
     );
   })
+  .add('VSLogo', () => {
+    return (
+      <View>
+        <VSSvg.VSLogo />
+      </View>
+    );
+  })
   ;
 
 const styles = StyleSheet.create({

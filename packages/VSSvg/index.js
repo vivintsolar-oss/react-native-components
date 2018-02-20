@@ -34,6 +34,7 @@ import ThumbprintIcon from './ThumbprintIcon';
 import TrashFillIcon from './TrashFillIcon';
 import WarningFillIcon from './WarningFillIcon';
 import WarningIcon from './WarningIcon';
+import VSLogo from './VSLogo';
 
 module.exports = {
   AddIcon,
@@ -72,4 +73,5 @@ module.exports = {
   TrashFillIcon,
   WarningFillIcon,
   WarningIcon,
+  VSLogo,
 };
