@@ -1,6 +1,6 @@
 {
   "name": "@vivintsolar-oss/native-vs-input",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Input for VSLR UI kit",
   "private": false,
   "author": "tcasey",
@@ -11,9 +11,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@vivintsolar-oss/native-vs-constants": "^1.0.1",
-    "@vivintsolar-oss/native-vs-icons": "^1.2.1",
-    "@vivintsolar-oss/native-vs-touchable": "^1.2.1"
+    "@vivintsolar-oss/native-vs-constants": "^1.0.2",
+    "@vivintsolar-oss/native-vs-icons": "^1.2.2",
+    "@vivintsolar-oss/native-vs-touchable": "^1.2.2"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",

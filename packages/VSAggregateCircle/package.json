@@ -1,6 +1,6 @@
 {
   "name": "@vivintsolar-oss/native-vs-aggregate-pie",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Native Aggregate Pie chart component",
   "private": false,
   "main": "./index.js",

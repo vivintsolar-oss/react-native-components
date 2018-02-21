@@ -1,6 +1,6 @@
 {
   "name": "@vivintsolar-oss/native-vs-collapsible",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Native collapsible component",
   "private": false,
   "main": "index.js",
