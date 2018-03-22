@@ -1,0 +1,37 @@
+{
+  "name": "@vivintsolar-oss/native-vs-app-link",
+  "version": "1.0.0",
+  "description": "Deep linking methods for React Native.",
+  "private": false,
+  "author": "tcasey",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivintsolar-oss/react-native-components.git"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "keywords": [
+    "react",
+    "react-native",
+    "react-native-component",
+    "deep-link",
+    "android",
+    "ios",
+    "mobile"
+  ],
+  "peerDependencies": {
+    "react": "16.0.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-22.0.1.tar.gz"
+  },
+  "bugs": {
+    "url": "https://github.com/vivintsolar-oss/react-native-components/issues"
+  },
+  "homepage": "https://github.com/vivintsolar-oss/react-native-components#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
