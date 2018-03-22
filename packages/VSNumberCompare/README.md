@@ -4,50 +4,37 @@
 
 yarn
 
-```
+```bash
 yarn add @vivintsolar-oss/native-vs-number-compare
 ```
 
 npm
 
-```
+```bash
 npm install @vivintsolar-oss/native-vs-button
 ```
 
 #### Usage
 
-Property list and default values
+There are three components that make up the number compare: `Wrapper, Numbers, Legend`. The data for comparison should be passed into the Wrapper. The Legend and Number components allow you to specify which should be above and which should be below, along with allowing styling on those particular items.
 
-```
-title = 'Defaults',
-values = [
-  {
-    unit: 'defs',
-    value: 0,
-    color: 'black',
-  },
-  {...},
-],
-legendPosition = 'bottom',
-contrast = false,
-fontMain = 'TradeGothicBold',
-fontSecondary = 'TradeGothicThin',
-fontSize = 72,
-fontRatio = 4,
-fontMinimum = 16,
-numberSpacing = 1,
-legendSpacing = 2,
+```js
+// Legend above
+<VSNumberCompare.Wrapper>
+	<VSNumberCompare.Legend />
+	<VSNumberCompare.Numbers />
+</VSNumberCompare.Wrapper>
+
+// Legend below
+<VSNumberCompare.Wrapper>
+	<VSNumberCompare.Legend />
+	<VSNumberCompare.Numbers />
+</VSNumberCompare.Wrapper>
 ```
 
-Default settings
+Simple values with style overrides
 
-```
-<VSNumberCompare />
-```
-
-Simple values
-
-```
+```js
 const values = [
   {
     unit: 'win',
@@ -59,19 +46,26 @@ const values = [
   },
 ];
 
-<VSNumberCompare
-	values={ values }
-	title="Welcome Calls"
-	legendPosition="top"
-	numberSpacing={ 15 }
-	fontSize={ 42 }
-	fontRatio={ 3 }
-/>
+<VSNumberCompare.Wrapper data={ values1 }>
+	<VSNumberCompare.Legend
+		style={{
+			fontSize: 16,
+			height: 16,
+		}}
+	/>
+	<VSNumberCompare.Numbers
+		style={{
+			fontSize: 72,
+			height: 72,
+			paddingTop: 1,
+		}}
+	/>
+</VSNumberCompare.Wrapper>
 ```
 
-Specify colors
+Specify colors on the individual values to style individual numbers
 
-```
+```js
 const values = [
   {
     unit: 'ac',
@@ -90,53 +84,8 @@ const values = [
   },
 ];
 
-<VSNumberCompare
-	values={ values }
-	title="Weekly Average"
-	legendPosition="bottom"
-	contrast
-/>
-```
-
-Specify font sizes, styles, and ratios
-
-```
-const values = [
-  {
-    unit: 'one',
-    value: 0,
-    color: 'red',
-  },
-  {
-    unit: 'two',
-    value: 6,
-    color: 'orange',
-  },
-  {
-    unit: 'thr',
-    value: 10,
-    color: 'yellow',
-  },
-  {
-    unit: 'for',
-    value: 25,
-    color: 'green',
-  },
-  {
-    unit: 'fiv',
-    value: 75,
-    color: 'blue',
-  },
-];
-
-<VSNumberCompare
-	values={ values }
-	title="Random Stuff"
-	legendPosition="bottom"
-	fontSize={ 54 }
-	fontRatio={ 3 }
-	legendSpacing={ 16 }
-  fontMain="TradeGothicBold",
-  fontSecondary="TradeGothicThin",
-/>
+<VSNumberCompare.Wrapper data={values}>
+	<VSNumberCompare.Legend />
+	<VSNumberCompare.Numbers />
+</VSNumberCompare.Wrapper>
 ```
