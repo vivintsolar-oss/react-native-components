@@ -85,35 +85,68 @@ storiesOf('Dashboards', module)
     return (
       <View style={ styles.wrapper }>
         <View style={ styles.wrapper }>
-          <VSNumberCompare />
+          <VSNumberCompare.Wrapper>
+            <VSNumberCompare.Legend style={ { height: 14 } } />
+            <VSNumberCompare.Numbers style={ { height: 72 } } />
+          </VSNumberCompare.Wrapper>
         </View>
         <View style={ styles.wrapper }>
-          <VSNumberCompare
-            values={ values1 }
-            title="Welcome Calls"
-            legendPosition="top"
-            numberSpacing={ 15 }
-            fontSize={ 42 }
-            fontRatio={ 3 }
-          />
+          <VSNumberCompare.Wrapper
+            data={ values1 }
+          >
+            <VSNumberCompare.Legend
+              style={ {
+                fontSize: 16,
+                height: 16,
+              } }
+            />
+            <VSNumberCompare.Numbers
+              style={ {
+                fontSize: 72,
+                height: 72,
+                paddingTop: 1,
+              } }
+            />
+          </VSNumberCompare.Wrapper>
         </View>
         <View style={ [ styles.wrapper, styles.contrast ] }>
-          <VSNumberCompare
-            values={ values2 }
-            title="Weekly Average"
-            legendPosition="bottom"
-            contrast
-          />
+          <VSNumberCompare.Wrapper
+            data={ values2 }
+            // style={ { backgroundColor: 'transparent' } }
+          >
+            <VSNumberCompare.Numbers
+              style={ {
+                color: 'white',
+                paddingTop: 1,
+              } }
+            />
+            <VSNumberCompare.Legend
+              style={ {
+                fontSize: 14,
+                paddingLeft: 2,
+                paddingRight: 2,
+                color: 'white',
+              } }
+            />
+          </VSNumberCompare.Wrapper>
         </View>
         <View style={ [ styles.wrapper ] }>
-          <VSNumberCompare
-            values={ values3 }
-            title="Random Stuff"
-            legendPosition="bottom"
-            fontSize={ 54 }
-            fontRatio={ 3 }
-            legendSpacing={ 16 }
-          />
+          <VSNumberCompare.Wrapper
+            data={ values3 }
+          >
+            <VSNumberCompare.Numbers
+              style={ {
+                fontSize: 48,
+              } }
+            />
+            <VSNumberCompare.Legend
+              style={ {
+                fontSize: 18,
+                paddingLeft: 8,
+                paddingRight: 8,
+              } }
+            />
+          </VSNumberCompare.Wrapper>
         </View>
       </View>
     );
