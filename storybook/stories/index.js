@@ -112,7 +112,6 @@ storiesOf('Dashboards', module)
         <View style={ [ styles.wrapper, styles.contrast ] }>
           <VSNumberCompare.Wrapper
             data={ values2 }
-            // style={ { backgroundColor: 'transparent' } }
           >
             <VSNumberCompare.Numbers
               style={ {
