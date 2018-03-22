@@ -1,6 +1,6 @@
 {
   "name": "react-native-components",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "private": true,
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.12",
