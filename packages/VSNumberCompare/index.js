@@ -25,10 +25,6 @@ const defaultStyles = StyleSheet.create({
     paddingRight: 1,
     paddingTop: 1,
   },
-  legendTop: {
-    top: -2,
-    marginBottom: 8,
-  },
 });
 
 const Wrapper = ({
