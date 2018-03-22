@@ -14,6 +14,10 @@ npm
 npm install @vivintsolar-oss/native-vs-button
 ```
 
+#### Usage Example
+
+Check out this [Expo Snack](https://snack.expo.io/@vslr_oss/vsnumbercompare) to see a live example.
+
 #### Usage
 
 There are three components that make up the number compare: `Wrapper, Numbers, Legend`. The data for comparison should be passed into the Wrapper. The Legend and Number components allow you to specify which should be above and which should be below, along with allowing styling on those particular items.
