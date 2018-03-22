@@ -5,6 +5,7 @@ import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
+import VSNumberCompare from '../../packages/VSNumberCompare';
 import VSAggregateCircle from '../../packages/VSAggregateCircle';
 import VSButton from '../../packages/VSButton';
 import VSCollapsible from '../../packages/VSCollapsible';
@@ -18,6 +19,105 @@ import Welcome from './Welcome';
 storiesOf('Welcome', module).add('to Storybook', () => {
   return <Welcome showApp={ linkTo('VSButton') } />;
 });
+
+storiesOf('Dashboards', module)
+  .addDecorator((getStory) => {
+    return <CenterView>{ getStory() }</CenterView>;
+  })
+  .add('VSNumberCompare', () => {
+    const values1 = [
+      {
+        unit: 'win',
+        value: 12,
+      },
+      {
+        unit: 'loss',
+        value: 3,
+      },
+    ];
+
+    const values2 = [
+      {
+        unit: 'ac',
+        value: 15,
+        color: 'red',
+      },
+      {
+        unit: 'wc',
+        value: 12,
+        color: 'white',
+      },
+      {
+        unit: 'sales (ps)',
+        value: 3,
+        color: 'blue',
+      },
+    ];
+
+    const values3 = [
+      {
+        unit: 'one',
+        value: 0,
+        color: 'red',
+      },
+      {
+        unit: 'two',
+        value: 6,
+        color: 'orange',
+      },
+      {
+        unit: 'thr',
+        value: 10,
+        color: 'yellow',
+      },
+      {
+        unit: 'for',
+        value: 25,
+        color: 'green',
+      },
+      {
+        unit: 'fiv',
+        value: 75,
+        color: 'blue',
+      },
+    ];
+
+    return (
+      <View style={ styles.wrapper }>
+        <View style={ styles.wrapper }>
+          <VSNumberCompare />
+        </View>
+        <View style={ styles.wrapper }>
+          <VSNumberCompare
+            values={ values1 }
+            title="Welcome Calls"
+            legendPosition="top"
+            numberSpacing={ 15 }
+            fontSize={ 42 }
+            fontRatio={ 3 }
+          />
+        </View>
+        <View style={ [ styles.wrapper, styles.contrast ] }>
+          <VSNumberCompare
+            values={ values2 }
+            title="Weekly Average"
+            legendPosition="bottom"
+            contrast
+          />
+        </View>
+        <View style={ [ styles.wrapper ] }>
+          <VSNumberCompare
+            values={ values3 }
+            title="Random Stuff"
+            legendPosition="bottom"
+            fontSize={ 54 }
+            fontRatio={ 3 }
+            legendSpacing={ 16 }
+          />
+        </View>
+      </View>
+    );
+  });
 
 storiesOf('Buttons', module)
   .addDecorator((getStory) => {
@@ -471,13 +571,6 @@ storiesOf('SVG', module)
       </View>
     );
   })
-  .add('VSLogo', () => {
-    return (
-      <View>
-        <VSSvg.VSLogo />
-      </View>
-    );
-  })
   ;
 
 const styles = StyleSheet.create({
@@ -508,5 +601,8 @@ const styles = StyleSheet.create({
   swipeWrapper: {
     width: Dimensions.get('window').width,
     height: '100%', // You can set any height here and the component should react
+  },
+  contrast: {
+    backgroundColor: '#202122',
   },
 });
