@@ -1,5 +1,12 @@
 import { getStorybookUI, configure } from '@storybook/react-native';
+import { Font } from 'expo';
 import './addons';
+
+const TradeGothicBold = require('../assets/fonts/TradeGothicLTStd-BdCn20.otf');
+const TradeGothicThin = require('../assets/fonts/TradeGothicLTStd-Cn18.otf');
+
+Font.loadAsync({ TradeGothicBold });
+Font.loadAsync({ TradeGothicThin });
 
 // import stories
 configure(() => {

@@ -5,6 +5,7 @@ import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
+import VSNumberCompare from '../../packages/VSNumberCompare';
 import VSAggregateCircle from '../../packages/VSAggregateCircle';
 import VSButton from '../../packages/VSButton';
 import VSCollapsible from '../../packages/VSCollapsible';
@@ -18,6 +19,138 @@ import Welcome from './Welcome';
 storiesOf('Welcome', module).add('to Storybook', () => {
   return <Welcome showApp={ linkTo('VSButton') } />;
 });
+
+storiesOf('Dashboards', module)
+  .addDecorator((getStory) => {
+    return <CenterView>{ getStory() }</CenterView>;
+  })
+  .add('VSNumberCompare', () => {
+    const values1 = [
+      {
+        unit: 'win',
+        value: 12,
+      },
+      {
+        unit: 'loss',
+        value: 3,
+      },
+    ];
+
+    const values2 = [
+      {
+        unit: 'ac',
+        value: 15,
+        color: 'red',
+      },
+      {
+        unit: 'wc',
+        value: 12,
+        color: 'white',
+      },
+      {
+        unit: 'sales (ps)',
+        value: 3,
+        color: 'blue',
+      },
+    ];
+
+    const values3 = [
+      {
+        unit: 'one',
+        value: 0,
+        color: 'red',
+      },
+      {
+        unit: 'two',
+        value: 6,
+        color: 'orange',
+      },
+      {
+        unit: 'thr',
+        value: 10,
+        color: 'yellow',
+      },
+      {
+        unit: 'for',
+        value: 25,
+        color: 'green',
+      },
+      {
+        unit: 'fiv',
+        value: 75,
+        color: 'blue',
+      },
+    ];
+
+    return (
+      <View style={ styles.wrapper }>
+        <View style={ styles.wrapper }>
+          <VSNumberCompare.Wrapper>
+            <VSNumberCompare.Legend style={ { height: 14 } } />
+            <VSNumberCompare.Numbers style={ { height: 72 } } />
+          </VSNumberCompare.Wrapper>
+        </View>
+        <View style={ styles.wrapper }>
+          <VSNumberCompare.Wrapper
+            data={ values1 }
+          >
+            <VSNumberCompare.Legend
+              style={ {
+                fontSize: 16,
+                height: 16,
+              } }
+            />
+            <VSNumberCompare.Numbers
+              style={ {
+                fontSize: 72,
+                height: 72,
+                paddingTop: 1,
+              } }
+            />
+          </VSNumberCompare.Wrapper>
+        </View>
+        <View style={ [ styles.wrapper, styles.contrast ] }>
+          <VSNumberCompare.Wrapper
+            data={ values2 }
+            // style={ { backgroundColor: 'transparent' } }
+          >
+            <VSNumberCompare.Numbers
+              style={ {
+                color: 'white',
+                paddingTop: 1,
+              } }
+            />
+            <VSNumberCompare.Legend
+              style={ {
+                fontSize: 14,
+                paddingLeft: 2,
+                paddingRight: 2,
+                color: 'white',
+              } }
+            />
+          </VSNumberCompare.Wrapper>
+        </View>
+        <View style={ [ styles.wrapper ] }>
+          <VSNumberCompare.Wrapper
+            data={ values3 }
+          >
+            <VSNumberCompare.Numbers
+              style={ {
+                fontSize: 54,
+              } }
+            />
+            <VSNumberCompare.Legend
+              style={ {
+                fontSize: 18,
+                paddingLeft: 9,
+                paddingRight: 9,
+              } }
+            />
+          </VSNumberCompare.Wrapper>
+        </View>
+      </View>
+    );
+  });
 
 storiesOf('Buttons', module)
   .addDecorator((getStory) => {
@@ -508,5 +641,8 @@ const styles = StyleSheet.create({
   swipeWrapper: {
     width: Dimensions.get('window').width,
     height: '100%', // You can set any height here and the component should react
+  },
+  contrast: {
+    backgroundColor: '#202122',
   },
 });
