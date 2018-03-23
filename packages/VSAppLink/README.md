@@ -28,6 +28,8 @@ VSAppLink.openOnDevice('vslr://+', config)
 
 ```
 
+This is the method you'll want to use most of the time since it will attempt to open up the app on the device and if it doesn't succeed then it will try either `openInStore` or `openInBrowser`. You can specify it to use `openInBrowser` by passing it a `downloadLink` in the config object.
+
 ### openInStore
 
 ``` javascript
@@ -39,6 +41,19 @@ const config = {
 };
 
 VSAppLink.openInStore(config)
+
+```
+
+### openInBrowser
+
+``` javascript
+import VSAppLink from '@vivintsolar-oss/native-vs-app-link';
+
+const config = {
+  downloadLink: 'https://www.vivintsolar.com',
+};
+
+VSAppLink.openInBrowser(config)
 
 ```
 
