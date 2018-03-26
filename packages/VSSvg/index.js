@@ -1,4 +1,5 @@
 import AddIcon from './AddIcon';
+import Carrot from './Carrot';
 import AlertFillIcon from './AlertFillIcon';
 import CallFillIcon from './CallFillIcon';
 import CallIcon from './CallIcon';
@@ -38,6 +39,7 @@ import WarningIcon from './WarningIcon';
 import VSLogo from './VSLogo';
 
 module.exports = {
+  Carrot,
   AddIcon,
   AlertFillIcon,
   CallFillIcon,

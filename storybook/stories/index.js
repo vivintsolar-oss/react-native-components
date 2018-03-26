@@ -5,6 +5,7 @@ import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
+import VSSelect from '../../packages/VSSelect';
 import VSNumberCompare from '../../packages/VSNumberCompare';
 import VSAggregateCircle from '../../packages/VSAggregateCircle';
 import VSButton from '../../packages/VSButton';
@@ -146,6 +147,147 @@ storiesOf('Dashboards', module)
               } }
             />
           </VSNumberCompare.Wrapper>
+        </View>
+      </View>
+    );
+  });
+
+storiesOf('Select', module)
+  .addDecorator((getStory) => {
+    return <CenterView>{getStory()}</CenterView>;
+  })
+  .add('Input', () => {
+    const list = [
+      {
+        label: 'None',
+        labelTextStyle: styles.center,
+        rightIcon: null,
+        onPress: () => {
+          Alert.alert('None');
+        },
+      },
+      {
+        label: 'WEP',
+        labelTextStyle: styles.center,
+        rightIcon: null,
+        onPress: () => {
+          Alert.alert('WEP');
+        },
+      },
+      {
+        label: 'WPA',
+        labelTextStyle: styles.center,
+        rightIcon: null,
+        onPress: () => {
+          Alert.alert('WPA');
+        },
+      },
+      {
+        label: 'EAP',
+        labelTextStyle: styles.center,
+        rightIcon: null,
+        onPress: () => {
+          Alert.alert('EAP');
+        },
+      },
+    ];
+
+    return (
+      <View style={ [ styles.wrapper, styles.lightContrast ] }>
+        <View style={ { width: '100%', height: 500 } }>
+          <VSSelect.Input
+            dropDownList={ list }
+            editable={ false }
+            label="VS Select Input"
+          />
+        </View>
+      </View>
+    );
+  })
+  .add('Form', () => {
+    const list = [
+      {
+        label: 'None',
+        labelTextStyle: styles.center,
+        rightIcon: null,
+        onPress: () => {
+          Alert.alert('None');
+        },
+      },
+      {
+        label: 'WEP',
+        labelTextStyle: styles.center,
+        rightIcon: null,
+        onPress: () => {
+          Alert.alert('WEP');
+        },
+      },
+      {
+        label: 'WPA',
+        labelTextStyle: styles.center,
+        rightIcon: null,
+        onPress: () => {
+          Alert.alert('WPA');
+        },
+      },
+      {
+        label: 'EAP',
+        labelTextStyle: styles.center,
+        rightIcon: null,
+        onPress: () => {
+          Alert.alert('EAP');
+        },
+      },
+    ];
+
+    class VSSelectFormStory extends React.Component {
+      constructor(props) {
+        super(props);
+
+        this.toggleDropDown = this.toggleDropDown.bind(this);
+
+        this.state = {
+          showDropDown: false,
+        };
+      }
+
+      toggleDropDown() {
+        return this.setState({ showDropDown: !this.state.showDropDown });
+      }
+
+      render() {
+        return (
+          <VSSelect.Form
+            dropDownList={ list }
+            showDropDown={ this.state.showDropDown }
+            carrotHorizontal={ 'left' }
+            carrotVertical={ 'top' }
+            carrotStyle={
+            {
+              paddingLeft: 15,
+            }
+            }
+          >
+            <VSSelect.Input
+              VSForm
+              editable={ false }
+              label="VS Select Form"
+              action={ this.toggleDropDown }
+            />
+            <View>
+              <View style={ styles.absolute }>
+                <VSButton text="SUBMIT" />
+              </View>
+            </View>
+          </VSSelect.Form>
+        );
+      }
+    }
+
+    return (
+      <View style={ [ styles.wrapper, styles.lightContrast ] }>
+        <View style={ { width: '100%', height: 500, paddingHorizontal: 20 } }>
+          <VSSelectFormStory />
         </View>
       </View>
     );
@@ -636,5 +778,16 @@ const styles = StyleSheet.create({
   },
   contrast: {
     backgroundColor: '#202122',
+  },
+  lightContrast: {
+    backgroundColor: '#f3f3f3',
+  },
+  absolute: {
+    position: 'absolute',
+    top: 10,
+    width: '100%',
+  },
+  center: {
+    textAlign: 'center',
   },
 });
