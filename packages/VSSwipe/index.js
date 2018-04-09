@@ -47,7 +47,7 @@ export default class VSSwipe extends Component {
   }
 
   render() {
-    const { children } = this.props;
+    const { children, testID, accessibilityLabel } = this.props;
 
     return (
       <View
@@ -58,6 +58,8 @@ export default class VSSwipe extends Component {
           showsHorizontalScrollIndicator={ false }
           scrollEventThrottle={ 16 }
           pagingEnabled
+          testID={ testID }
+          accessibilityLabel={ accessibilityLabel }
           onScroll={ (event) => {
             const width = Dimensions.get('window').width;
             const { x } = event.nativeEvent.contentOffset;
@@ -80,6 +82,8 @@ export default class VSSwipe extends Component {
 VSSwipe.propTypes = {
   children: PropTypes.oneOfType([ PropTypes.array, PropTypes.object ]),
   indicatorColor: PropTypes.string,
+  testID: PropTypes.string,
+  accessibilityLabel: PropTypes.string,
 };
 
 VSSwipe.defaultProps = {
