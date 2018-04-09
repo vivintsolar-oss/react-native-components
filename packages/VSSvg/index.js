@@ -9,6 +9,7 @@ import CheckmarkCircleFillIcon from './CheckmarkCircleFillIcon';
 import CircleFillIcon from './CircleFillIcon';
 import CloseIcon from './CloseIcon';
 import CoalFillIcon from './CoalFillIcon';
+import DownChevron from './DownChevron';
 import EyeFillIcon from './EyeFillIcon';
 import EyeIcon from './EyeIcon';
 import FuelTankFillIcon from './FuelTankFillIcon';
@@ -48,6 +49,7 @@ module.exports = {
   CircleFillIcon,
   CloseIcon,
   CoalFillIcon,
+  DownChevron,
   EyeFillIcon,
   EyeIcon,
   FuelTankFillIcon,
