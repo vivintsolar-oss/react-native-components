@@ -37,6 +37,8 @@ import VSInput from '@vivintsolar-oss/native-vs-input';
 | label | label | string | The text for your label |
 | reference |  | function | Ref function used to hoist state |
 | info |  | boolean | Shows the info state |
+| infoTestID |  | string | Value applied to the testID prop of an info button |
+| infoAccessibilityLabel |  | string | Value applied to the accessibilityLabel prop of an info button |
 | error |  | string | The error message displayed & shows error state |
 | password |  | boolean | Shows the password state |
 | toggle |  | function | Used to toggle state for more info icon (like a modal/alert) |
