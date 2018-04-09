@@ -66,7 +66,7 @@ export default class VSInput extends Component {
       },
     });
 
-    const { error, reference, form, index, label, toggle, info, password } = this.props;
+    const { error, reference, form, index, label, toggle, info, password, infoTestID, infoAccessibilityLabel } = this.props;
     const { showPw } = this.state;
     const warning = error;
     const myProps = {
@@ -86,7 +86,15 @@ export default class VSInput extends Component {
     if (info) {
       LabelIcon = VSSvg.InfoFillIcon;
       LabelIconColor = Colors.ORANGE;
-      IconWrapper = <Touchable onPress={ toggle } ><LabelIcon color={ LabelIconColor } width={ 16 } height={ 16 } /></Touchable>;
+      IconWrapper = ( // eslint-disable-line no-extra-parens
+        <Touchable
+          onPress={ toggle }
+          testID={ infoTestID }
+          accessibilityLabel={ infoAccessibilityLabel }
+        >
+          <LabelIcon color={ LabelIconColor } width={ 16 } height={ 16 } />
+        </Touchable>
+      );
     }
 
     if (warning) {
@@ -151,6 +159,8 @@ VSInput.propTypes = {
   toggle: PropTypes.func,
   reference: PropTypes.func,
   password: PropTypes.bool,
+  infoTestID: PropTypes.string,
+  infoAccessibilityLabel: PropTypes.string,
 };
 
 VSInput.defaultProps = {
