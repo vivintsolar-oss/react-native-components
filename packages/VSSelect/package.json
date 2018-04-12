@@ -1,6 +1,6 @@
 {
   "name": "@vivintsolar-oss/native-vs-select",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Drop down select component for React Native.",
   "private": false,
   "author": "tcasey",
@@ -12,9 +12,9 @@
   "license": "MIT",
   "dependencies": {
     "@vivintsolar-oss/native-vs-constants": "^1.0.2",
-    "@vivintsolar-oss/native-vs-icons": "^1.2.2",
-    "@vivintsolar-oss/native-vs-list": "^1.0.2",
-    "@vivintsolar-oss/native-vs-touchable": "^1.2.2"
+    "@vivintsolar-oss/native-vs-icons": "^1.2.3",
+    "@vivintsolar-oss/native-vs-list": "^1.0.3",
+    "@vivintsolar-oss/native-vs-touchable": "^1.2.3"
   },
   "keywords": [
     "react",
