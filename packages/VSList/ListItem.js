@@ -19,7 +19,7 @@ export default class ListItem extends Component {
       rightIconStyle,
       renderLabel,
       onPress,
-      testID,
+      touchableTestID,
       accessibilityLabel,
       itemHeight,
     } = this.props;
@@ -51,7 +51,7 @@ export default class ListItem extends Component {
         <MainContent
           onPress={ onPress }
           style={ styles.label }
-          testID={ testID }
+          touchableTestID={ touchableTestID }
           accessibilityLabel={ accessibilityLabel }
         >
           {
@@ -122,5 +122,5 @@ ListItem.propTypes = {
   rightIcon: PropTypes.func,
   renderLabel: PropTypes.func,
   accessibilityLabel: PropTypes.string,
-  testID: PropTypes.string,
+  touchableTestID: PropTypes.string,
 };
