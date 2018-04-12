@@ -41,7 +41,7 @@ export default class VSTouchable extends React.Component {
         </TouchableComponent>
       );
     } else {
-      let { children, fallback, style, ...props } = this.props;
+      let { children, fallback, style, touchableTestID, ...props } = this.props;
       let TouchableFallback = fallback || TouchableComponent;
 
       return (
