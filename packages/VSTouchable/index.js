@@ -33,19 +33,19 @@ export default class VSTouchable extends React.Component {
 
   render() {
     if (TouchableComponent === TouchableNativeFeedback) {
-      let { children, style, touchableTestID, ...props } = this.props;
+      let { children, style, ...props } = this.props;
 
       return (
-        <TouchableComponent {...props} testID={ touchableTestID }>
+        <TouchableComponent {...props}>
           <View style={style}>{children}</View>
         </TouchableComponent>
       );
     } else {
-      let { children, fallback, style, touchableTestID, ...props } = this.props;
+      let { children, fallback, style, ...props } = this.props;
       let TouchableFallback = fallback || TouchableComponent;
 
       return (
-        <TouchableFallback {...props} activeOpacity={0.6} testID={ touchableTestID }>
+        <TouchableFallback {...props} activeOpacity={0.6}>
           <View style={style}>{children}</View>
         </TouchableFallback>
       );
