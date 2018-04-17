@@ -443,33 +443,6 @@ storiesOf('Input', module)
       </View>
     );
   });
-storiesOf('Modal', module)
-  .addDecorator((getStory) => {
-    return <CenterView>{getStory()}</CenterView>;
-  })
-  .add('Success', () => {
-    return (
-      <View style={ [ styles.modalWrapper ] }>
-        <VSModal
-          type="success"
-          text={ 'Every little thing is gonna be alright.' }
-          createText="OK"
-        />
-      </View>
-    );
-  })
-  .add('Create', () => {
-    return (
-      <View style={ [ styles.modalWrapper ] }>
-        <VSModal
-          type="create"
-          text={ 'Way to go, looks like you did something right for a change!' }
-          createText="Go Back"
-          link="/"
-        />
-      </View>
-    );
-  });
 storiesOf('Swipeable', module)
   .addDecorator((getStory) => {
     return <CenterView>{ getStory() }</CenterView>;
