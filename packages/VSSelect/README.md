@@ -48,10 +48,13 @@ import { Input, Form } from '@vivintsolar-oss/native-vs-select';
 | Name | Default | Type | Description |
 |:----- |:------ |:---- |:----------- |
 | VSForm |  | string |  |
-| dropDownList |  | object |  |
+| dropDownList |  | array | [ [ { label: STRING, labelTextStyle: ARRAY OR OBJECT, rightIcon: OBJECT, onPress: FUNCTION } ... ] |
 | showDropDown |  | object |  |
 | editable |  | object |  |
 | carrotColor | 'white' | string | Controls the color of the carrot. |
 | carrotVertical | 'top' | string | Controls the horizontal position of the carrot. Accepted values includes: `left`, `middle`, or `right`. |
 | carrotHorizontal | 'right' | string | Controls the vertical position of the carrot. Accepted values includes: `top` or `bottom`. |
 | carrotStyle | {} | object | This will extend the styles applied to the carrot container. A case for this is to change the right/left padding of the carrot's horizontal position. |
+| listStyle | {} | object | This will extend the styles applied to the drop-down list |
+| itemStyle | {} | object | This will extend the styles applied to the drop-down items. |
+| rightIconStyle | {} | object | This will extend the styles applied the drop-down right icon on items. |

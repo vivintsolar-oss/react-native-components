@@ -208,7 +208,7 @@ storiesOf('Select', module)
     const list = [
       {
         label: 'None',
-        labelTextStyle: styles.center,
+        labelTextStyle: [ styles.center, { fontSize: 12 } ],
         rightIcon: null,
         onPress: () => {
           Alert.alert('None');
@@ -258,6 +258,8 @@ storiesOf('Select', module)
       render() {
         return (
           <VSSelect.Form
+            listStyle={ { width: 250 } }
+            itemStyle={ { backgroundColor: 'gray' } }
             dropDownList={ list }
             showDropDown={ this.state.showDropDown }
             carrotHorizontal={ 'left' }
