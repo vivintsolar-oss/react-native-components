@@ -1,6 +1,6 @@
 {
   "name": "@vivintsolar-oss/native-vs-select",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Drop down select component for React Native.",
   "private": false,
   "author": "tcasey",
