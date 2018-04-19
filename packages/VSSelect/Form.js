@@ -26,6 +26,9 @@ export default class Form extends Component {
       carrotStyle,
       carrotVertical,
       carrotHorizontal,
+      listStyle,
+      itemStyle,
+      rightIconStyle,
     } = this.props;
 
     return (
@@ -41,6 +44,9 @@ export default class Form extends Component {
             carrotStyle={ carrotStyle }
             vertical={ carrotVertical }
             horizontal={ carrotHorizontal }
+            listStyle={ listStyle }
+            itemStyle={ itemStyle }
+            rightIconStyle={ rightIconStyle }
           />
         }
       </View>
@@ -56,4 +62,7 @@ Form.propTypes = {
   carrotVertical: PropTypes.string,
   carrotHorizontal: PropTypes.string,
   carrotStyle: ViewPropTypes.style,
+  listStyle: ViewPropTypes.style,
+  itemStyle: ViewPropTypes.style,
+  rightIconStyle: ViewPropTypes.style,
 };

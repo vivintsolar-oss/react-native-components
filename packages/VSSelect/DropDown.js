@@ -137,4 +137,9 @@ VSSelectDropDown.defaultProps = {
   vertical: STRING_POSITION_TOP,
   horizontal: STRING_POSITION_RIGHT,
   carrotColor: STRING_CARROT_COLOR,
+  list: [],
+  carrotStyle: {},
+  listStyle: {},
+  itemStyle: {},
+  rightIconStyle: {},
 };
