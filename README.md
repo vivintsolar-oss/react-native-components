@@ -2,9 +2,23 @@
 
 This project was bootstrapped with [CRNA](https://github.com/react-community/create-react-native-app), [Storybook](https://github.com/storybooks/storybook/tree/master/app/react-native), & [Lerna](https://lernajs.io/).
 
-# Getting Started
+## Packages
 
-## Local Setup
+* [VSAggregateCircle](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSAggregateCircle)
+* [VSButton](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSButton)
+* [VSCollapsible](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSCollapsible)
+* [VSConstants](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSConstants)
+* [VSInput](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSInput)
+* [VSList](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSList)
+* [VSModal](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSModal)
+* [VSNumberCompare](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSNumberCompare)
+* [VSSelect](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSSelect)
+* [VSSwipe](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSSwipe)
+* [VSTouchable](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSTouchable)
+
+## Getting Started
+
+### Local Setup
 
 * Install [X Code](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) then using `finder` you'll want to look for `simulator.app` & finally open it.
 * Install [watchman](https://facebook.github.io/watchman/) via `brew install watchman`
@@ -36,6 +50,12 @@ We have a `postinstall` that runs [rndebbugger-open](https://www.npmjs.com/packa
 
 ## Published Storybook
 
-You can find the expo community app [here](https://expo.io/@vivintsolar/vslr-ui-kit) or if you already have [expo](https://expo.io/) installed on your phone then scan the QR code down below 👇🏼
+You can find the expo community app [here](https://expo.io/@vivintsolar/vslr-ui-kit) or if you already have [expo](https://expo.io/) installed on an android phone then scan the QR code down below 👇🏼
+
+### READ THIS FIRST, PLEASE
+
+The App Store version of the Expo iOS client recently had to remove the QR code scanner from the app. If you intend to load your app on a physical iOS device, please use exp send with exp, the “Send” button with XDE, or the "s" hotkey with create-react-native-app to send your project development URL to your phone by SMS or email.
+
+Read more at https://blog.expo.io/upcoming-limitations-to-ios-expo-client-8076d01aee1a. We apologize for any inconvenience this may cause you!
 
 <img  alt="Expo QR Code" src="https://raw.githubusercontent.com/vivintsolar-oss/react-native-components/master/assets/QR.png" width="300" />
