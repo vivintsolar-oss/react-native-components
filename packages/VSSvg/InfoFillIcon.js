@@ -2,18 +2,19 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Svg, { G, Path } from 'react-native-svg';
 
-export default class InfoFillIcon extends Component {
+export default class InfoIcon extends Component {
   render() {
     return (
       <Svg
         width={ this.props.width }
         height={ this.props.height }
-        viewBox="0 0 16 16"
+        viewBox="-1 -1 18 18"
       >
         <G
           id="Info"
           transform={ { translate: '(-1606 -163)' } }
-          fill={ this.props.color }
+          fill={ this.props.fill }
+          stroke={ this.props.stroke}
         >
           <Path
             fillRule="evenodd"
@@ -25,14 +26,16 @@ export default class InfoFillIcon extends Component {
   }
 }
 
-InfoFillIcon.propTypes = {
+InfoIcon.propTypes = {
   width: PropTypes.number,
   height: PropTypes.number,
-  color: PropTypes.string,
+  fill: PropTypes.string,
+  stroke: PropTypes.string,
 };
 
-InfoFillIcon.defaultProps = {
+InfoIcon.defaultProps = {
   width: 25,
   height: 26,
-  color: 'black',
+  fill: 'black',
+  stroke: 'none',
 };
