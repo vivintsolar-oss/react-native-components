@@ -1,0 +1,27 @@
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+// import PropTypes from 'prop-types';
+
+class {{ properCase name }} extends {{{ type }}} {
+  render() {
+    return (
+      <View style={ styles.container }>
+        <Text> edit me. </Text>
+      </View>
+    );
+  }
+}
+
+{{ properCase name }}.propTypes = {};
+
+const styles = StyleSheet.create({
+  container: {
+    width: '100%',
+    borderWidth: 1,
+    borderStyle: 'dashed',
+    borderColor: '#FF0000',
+    padding: 10,
+  },
+});
+
+export default {{ properCase name }};

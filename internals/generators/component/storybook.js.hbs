@@ -1,0 +1,17 @@
+/* eslint-disable no-extra-parens */
+/* eslint-disable arrow-body-style */
+import React from 'react';
+
+import { storiesOf } from '@storybook/react-native';
+import { action } from '@storybook/addon-actions';
+import { withKnobs } from '@storybook/addon-knobs';
+
+import CenterView from '../../storybook/stories/CenterView';
+import {{ properCase name }} from '.';
+
+storiesOf('{{ properCase name }}', module)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .addDecorator(withKnobs)
+  .add('default', () => (
+    <{{ properCase name }} />
+  ));

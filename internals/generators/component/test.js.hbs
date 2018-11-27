@@ -1,0 +1,21 @@
+/* eslint-env node , jest */
+import React from 'react';
+import renderer from 'react-test-renderer';
+
+import {{ properCase name }} from '../index';
+
+describe('<{{ properCase name }} />', () => {
+  describe('snapshots', () => {
+    it('should match snapshot', () => {
+      const rendered = renderer.create(
+        <{{properCase name}} />
+      ).toJSON();
+
+      expect(rendered).toMatchSnapshot();
+    });
+  });
+
+  it('should have unit tests specified', () => {
+    expect(true).toEqual(false);
+  });
+});
