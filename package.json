@@ -16,26 +16,28 @@
     "eslint-plugin-promise": "^3.5.0",
     "lerna": "^2.4.0",
     "prop-types": "^15.6.0",
-    "react-dom": "16.0.0-alpha.12",
+    "react-dom": "16.3.1",
     "react-native-debugger-open": "^0.3.15",
-    "react-native-scripts": "1.5.0",
-    "react-test-renderer": "16.0.0-alpha.12"
+    "react-test-renderer": "16.3.2"
   },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "main": "node_modules/expo/AppEntry.js",
+  "engines": {
+    "node": ">=8.12.0"
+  },
   "scripts": {
     "prestart": "lerna bootstrap",
-    "start": "concurrently --kill-others \"npm run storybook\" \"react-native-scripts start\"",
-    "android": "concurrently --kill-others \"npm run storybook\" \"react-native-scripts android\"",
-    "ios": "concurrently --kill-others \"npm run storybook\" \"react-native-scripts ios\"",
-    "eject": "react-native-scripts eject",
+    "start": "yarn storybook && expo start",
+    "android": "yarn storybook && expo start --android",
+    "ios": "yarn storybook && expo start --ios",
     "storybook": "storybook start -p 7007",
     "publish": "lerna publish",
     "postinstall": "rndebugger-open"
   },
   "dependencies": {
-    "expo": "^21.0.0",
-    "react": "16.0.0-alpha.12",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-21.0.2.tar.gz",
-    "react-native-svg": "https://github.com/expo/react-native-svg/archive/5.5.1-exp.1.tar.gz"
+    "expo": "^30.0.1",
+    "expo-cli": "^2.4.3",
+    "react": "16.3.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
+    "react-native-svg": "6.2.2"
   }
 }
