@@ -17,10 +17,14 @@
     "eslint": "^3.19.0",
     "eslint-config-vstg": "^2.1.0",
     "eslint-plugin-promise": "^3.5.0",
+    "jest": "^23.6.0",
+    "jest-expo": "^30.0.0",
     "lerna": "^3.4.3",
+    "plop": "^2.1.0",
     "prop-types": "^15.6.0",
     "react-dom": "16.3.1",
     "react-native-debugger-open": "^0.3.15",
+    "react-native-storybook-loader": "^1.8.0",
     "react-test-renderer": "16.3.2"
   },
   "main": "node_modules/expo/AppEntry.js",
@@ -29,12 +33,15 @@
   },
   "scripts": {
     "prestart": "lerna bootstrap",
-    "start": "yarn storybook && expo start",
+    "start": "concurrently --kill-others \"yarn storybook\" \"expo start\"",
     "android": "yarn storybook && expo start --android",
     "ios": "yarn storybook && expo start --ios",
+    "prestorybook": "rnstl",
     "storybook": "storybook start -p 7007",
     "publish": "lerna publish",
-    "postinstall": "rndebugger-open"
+    "postinstall": "rndebugger-open",
+    "generate": "plop --plopfile internals/generators/index.js",
+    "test": "jest"
   },
   "dependencies": {
     "expo": "^30.0.1",
@@ -42,5 +49,35 @@
     "react": "16.3.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
     "react-native-svg": "6.2.2"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "json-summary"
+    ],
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/scripts/**"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|@vivintsolar|@vivintsolar-oss)/"
+    ],
+    "testPathIgnorePatterns": [
+      "test/e2e/",
+      "node_modules/"
+    ]
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./packages",
+        "./storybook/stories"
+      ],
+      "pattern": "**/*.stories.js",
+      "outputFile": "./storybook/storyLoader.js"
+    }
   }
 }
