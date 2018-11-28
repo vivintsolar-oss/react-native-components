@@ -2,19 +2,7 @@
 
 This project was bootstrapped with [CRNA](https://github.com/react-community/create-react-native-app), [Storybook](https://github.com/storybooks/storybook/tree/master/app/react-native), & [Lerna](https://lernajs.io/).
 
-## Packages
-
-* [VSAggregateCircle](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSAggregateCircle)
-* [VSButton](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSButton)
-* [VSCollapsible](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSCollapsible)
-* [VSConstants](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSConstants)
-* [VSInput](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSInput)
-* [VSList](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSList)
-* [VSModal](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSModal)
-* [VSNumberCompare](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSNumberCompare)
-* [VSSelect](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSSelect)
-* [VSSwipe](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSSwipe)
-* [VSTouchable](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages/VSTouchable)
+## [Packages list](https://github.com/vivintsolar-oss/react-native-components/tree/master/packages) 
 
 ## Getting Started
 
@@ -26,16 +14,11 @@ This project was bootstrapped with [CRNA](https://github.com/react-community/cre
 * Run `yarn start` to launch the app
 
 ### Open on simulator
-
-If your simulator is open you should get a prompt to `Open in Expo`. Approve the prompt and it should launch expo which will open up to something like `exp://localhost:19000`. Otherwise when you run the start script it should launch your simulator and follow the same flow as explained above but sometimes it crashes before it completes so in that case just run it again with the simulator opened.
-
-Also if you get an error that says something like `websocket:connection error` just dismess it and move on. It's a storybook issue.
-
-### Open on device
-
-To get it running on your device you can simply download the [Expo Client](https://itunes.apple.com/us/app/expo-client/id982107779?mt=8) and scan the qr code that's generated from running the start script. You can also run previous expo sessions that show up on their `Recently Visited` screen.
-
-Also if you get an error that says something like `websocket:connection error` just dismess it and move on. It's a storybook issue.
+1. Run `yarn start`
+    * Start the Expo DevTools and gives you a URL, e.g. http://localhost:19002
+    * Starts the Storybook React and gives you a URL, e.g. http://localhost:7007
+    * Starts the Expo app, usually you'll open it from the Expo DevTools
+      * Alternately, you can run `yarn start ios` or `yarn start android` to immediately target a platform
 
 ## Debugging
 
@@ -59,3 +42,9 @@ The App Store version of the Expo iOS client recently had to remove the QR code 
 Read more at https://blog.expo.io/upcoming-limitations-to-ios-expo-client-8076d01aee1a. We apologize for any inconvenience this may cause you!
 
 <img  alt="Expo QR Code" src="https://raw.githubusercontent.com/vivintsolar-oss/react-native-components/master/assets/QR.png" width="300" />
+
+## Publishing
+This is a [lerno](https://lernajs.io) monorepo.  Check out their documentation to understand how to publish, check for `changed` packages, etc.
+
+## Contributing
+When you're ready or have a need to contribute, take a look at the [contributing process](.github/CONTRIBUTING.md).
