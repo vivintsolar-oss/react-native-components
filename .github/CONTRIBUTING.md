@@ -28,8 +28,6 @@ Thanks for being willing to contribute. Together we can all make our shared prod
 ### Creating a new component
 **Use the [generator](../internals/generators/README.md)**.  Or add to it
 
-
-
 ### Submitting Changes
 
 Please create a [Github Pull Request](https://github.com/vivintsolar-oss/react-native-components/pull/new/master). We've provided a template, and ask that you fill it out completely.
