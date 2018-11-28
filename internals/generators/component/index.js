@@ -20,7 +20,7 @@ module.exports = {
       type: 'input',
       name: 'name',
       message: 'What should it be called?',
-      default: 'VSButton',
+      default: 'ExampleComponent',
       validate: (value) => {
         if (/.+/.test(value)) {
           return componentExists(value)
@@ -33,7 +33,6 @@ module.exports = {
     },
   ],
   actions: (data) => {
-    // Generate index.js and index.test.js
     let componentTemplate;
 
     switch (data.type) {
