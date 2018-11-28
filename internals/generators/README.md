@@ -14,5 +14,5 @@ This will generate folder under `/packages` containing the component, a storyboo
 ## Adding to the generator
 To add more goodies to the generator all you will need to do is write your [plopfile](https://plopjs.com/documentation/#your-first-plopfile). This is where you ask the user for information about the code they are trying to generate. Then you add the template for your plopfile. The templates leverage [{{handlebars}}](https://handlebarsjs.com/) to do something meaningful with the information gathered by your prompts.
 
-## Credit 
+## Credit
 @braxtonchristensen
