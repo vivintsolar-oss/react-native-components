@@ -1,10 +1,8 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, Dimensions, Alert } from 'react-native';
-
 import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
-
 
 import VSSelect from '../../packages/VSSelect';
 import VSNumberCompare from '../../packages/VSNumberCompare';
