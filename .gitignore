@@ -7,3 +7,4 @@ yarn.lock
 .lerna_backup
 lerna-debug.log
 package-lock.json
+coverage
