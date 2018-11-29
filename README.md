@@ -39,12 +39,26 @@ You can find the expo community app [here](https://expo.io/@vivintsolar/vslr-ui-
 
 The App Store version of the Expo iOS client recently had to remove the QR code scanner from the app. If you intend to load your app on a physical iOS device, please use exp send with exp, the “Send” button with XDE, or the "s" hotkey with create-react-native-app to send your project development URL to your phone by SMS or email.
 
-Read more at https://blog.expo.io/upcoming-limitations-to-ios-expo-client-8076d01aee1a. We apologize for any inconvenience this may cause you!
+Read more at https://blog.expo.io/upcoming-limitations-to-ios-expo-client-8076d01aee1a.
 
 <img  alt="Expo QR Code" src="https://raw.githubusercontent.com/vivintsolar-oss/react-native-components/master/assets/QR.png" width="300" />
 
 ## Publishing
-This is a [lerno](https://lernajs.io) monorepo.  Check out their documentation to understand how to publish, check for `changed` packages, etc.
+Run `yarn run publish --message 'chore: publish'` to publish package changes. 
+* Commit linting requires the message follow the [conventional commit format](https://www.conventionalcommits.org/)
+* This uses independent lerna versioning 
+* It relies on conventional commit messages to
+automatically bump any changed packages
+* Updates changelogs for any published packages
+* Publishes packages to npm and tarballs to github
+
+
+
+_This is a [lerno](https://lernajs.io) monorepo.  Check out their documentation to understand how to publish, check for `changed` packages, etc._
+
+
+
+
 
 ## Contributing
 When you're ready or have a need to contribute, take a look at the [contributing process](.github/CONTRIBUTING.md).
