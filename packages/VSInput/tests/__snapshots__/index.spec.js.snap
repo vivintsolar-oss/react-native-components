@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VSInput /> snapshots default props should match snapshot 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "marginTop": 8,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#1F2123",
+          "fontSize": 12,
+        }
+      }
+    >
+      Password
+        
+    </Text>
+  </View>
+  <View>
+    <TextInput
+      allowFontScaling={true}
+      autoCorrect={false}
+      defaultValue=""
+      form={Array []}
+      index={0}
+      label="Password"
+      password={true}
+      reference={[Function]}
+      secureTextEntry={true}
+      style={
+        Object {
+          "borderColor": "#D9DADB",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "height": 48,
+          "marginBottom": 8,
+          "marginTop": 8,
+          "padding": 8,
+          "width": "100%",
+        }
+      }
+      underlineColorAndroid="rgba(0,0,0,0)"
+    />
+    <View
+      accessible={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "height": 48,
+          "justifyContent": "center",
+          "position": "absolute",
+          "right": 0,
+          "top": 8,
+          "width": 40,
+        }
+      }
+    >
+      <RNSVGSvgView
+        align="xMidYMid"
+        meetOrSlice={0}
+        minX={0}
+        minY={0}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+            },
+            undefined,
+            false,
+            Object {
+              "flex": 0,
+              "height": 16,
+              "width": 16,
+            },
+          ]
+        }
+        vbHeight={23}
+        vbWidth={25}
+      >
+        <RNSVGGroup
+          fill={
+            Array [
+              0,
+              1,
+              0.5098039215686274,
+              0,
+              1,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={Object {}}
+          matrix={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          name="No_View_Fill"
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth="1"
+          x={0}
+          y={0}
+        >
+          <RNSVGPath
+            d="M 23.1475 0L 18.7375 4.41C 17.0575 3.49001 14.9975 2.86 12.4975 2.86C 3.4675 2.86 0.0675049 11.09 0.0375061 11.17C -0.0124969 11.29 -0.0124969 11.42 0.0375061 11.54C 0.0574951 11.6 1.61749 15.33 5.3775 17.77L 1.14751 22L 1.8575 22.71L 23.8575 0.710007L 23.1475 0ZM 9.1075 11.35C 9.1075 9.42001 10.6775 7.85001 12.6075 7.85001C 13.3675 7.85001 14.0475 8.11 14.6175 8.52L 9.7775 13.36C 9.36749 12.79 9.1075 12.11 9.1075 11.35ZM 20.4475 5.5C 23.6175 7.91 24.9375 11.11 24.9575 11.16C 25.0075 11.28 25.0075 11.42 24.9475 11.55C 24.9175 11.63 21.5175 19.86 12.4875 19.86C 10.4375 19.86 8.6875 19.42 7.1875 18.76L 11.3375 14.61C 11.7275 14.76 12.1475 14.85 12.5975 14.85C 14.5275 14.85 16.0975 13.28 16.0975 11.35C 16.0975 10.91 16.0075 10.48 15.8575 10.09L 20.4475 5.5Z"
+            fill={
+              Array [
+                0,
+                0,
+                0,
+                0,
+                1,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={Array []}
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth="1"
+            x={0}
+            y={0}
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+    </View>
+  </View>
+</View>
+`;
