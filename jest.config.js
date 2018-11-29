@@ -14,7 +14,6 @@ module.exports = {
     'node_modules/(?!react-native|@vivintsolar|@vivintsolar-oss)/',
   ],
   testPathIgnorePatterns: [
-    'test/e2e/',
     'node_modules/',
   ],
 };
