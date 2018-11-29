@@ -1,6 +1,6 @@
 {
   "name": "@vivintsolar-oss/native-vs-swipeable",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Native Swipeable Component",
   "private": false,
   "author": "stetsmando",
@@ -11,7 +11,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@vivintsolar-oss/native-vs-icons": "^1.2.4",
+    "@vivintsolar-oss/native-vs-icons": "^1.2.5",
     "react-native-svg": "^6.0.0-rc1"
   },
   "peerDependencies": {
